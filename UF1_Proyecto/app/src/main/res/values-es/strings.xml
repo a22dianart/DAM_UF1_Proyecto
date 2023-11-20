@@ -1,0 +1,22 @@
+
+<resources>
+    <string name="app_name">EverHorizon</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="calendar_txt">Calendario</string>
+    <string name="map_txt">Mapa</string>
+    <string name="info_txt">Info</string>
+
+    <string name="next_trip">Tu próximo viaje</string>
+    <string name="cities">Ciudades</string>
+    <string name="countries">Países</string>
+    <string name="transport">Transporte</string>
+    <string name="stay">Estancia</string>
+    <string name="place">Lugar</string>
+    <string name="recommendations">Recomendaciones</string>
+    <string name="items">Items</string>
+    <string name="notes">Notas</string>
+    <string name="suitcase">Maleta</string>
+    <string name="wallet">Billetera</string>
+    <string name="album">Álbum</string>
+</resources>

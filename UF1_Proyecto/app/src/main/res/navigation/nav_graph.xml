@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calendarFragment">
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.uf1_proyecto.CalendarFragment"
+        android:label="Inbox"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.uf1_proyecto.MapFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.uf1_proyecto.HelpFragment"
+        android:label="Sent items"
+        tools:layout="@layout/fragment_help" />
+</navigation>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--Resalte de elemento seleccionado -->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/inboxFragment"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="Inbox"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/messageFragment"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="Sent message"
+            app:showAsAction="always" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/transportFragment"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/transport"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/stayFragment"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="@string/stay"
+            app:showAsAction="always" />
+    </group>
+
+    <item android:title="@string/next_trip">
+        <menu>
+            <item
+                android:id="@+id/placeFragment"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="@string/recommendations"
+                app:showAsAction="always"/>
+
+            <item
+                android:id="@+id/recommendationsFragment"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="@string/recommendations"
+                app:showAsAction="always"/>
+            <item
+                android:id="@+id/itemsFragment"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="@string/items"
+                app:showAsAction="always"/>
+            <item
+                android:id="@+id/notesFragment"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="@string/notes"
+                app:showAsAction="always"/>
+
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/suitcaseFragment"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/suitcase"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/walletFragment"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="@string/wallet"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/albumFragment"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="@string/album"
+            app:showAsAction="always" />
+
+    </group>
+</menu>
