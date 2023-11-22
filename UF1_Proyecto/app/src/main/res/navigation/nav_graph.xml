@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.uf1_proyecto.CalendarFragment"
-        android:label="Inbox"
+        android:label="EverHorizon"
         tools:layout="@layout/fragment_calendar" />
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.example.uf1_proyecto.MapFragment"
-        android:label="Help"
+        android:label="EverHorizom"
         tools:layout="@layout/fragment_map" />
     <fragment
         android:id="@+id/helpFragment"
         android:name="com.example.uf1_proyecto.HelpFragment"
-        android:label="Sent items"
+        android:label="EverHorizon"
         tools:layout="@layout/fragment_help" />
 </navigation>

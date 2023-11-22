@@ -7,12 +7,12 @@
         <item
             android:id="@+id/inboxFragment"
             android:icon="@android:drawable/ic_dialog_email"
-            android:title="Inbox"
+            android:title="@string/cities"
             app:showAsAction="always" />
         <item
             android:id="@+id/messageFragment"
             android:icon="@android:drawable/ic_menu_send"
-            android:title="Sent message"
+            android:title="@string/countries"
             app:showAsAction="always" />
     </group>
     <group android:checkableBehavior="single">
@@ -33,7 +33,7 @@
             <item
                 android:id="@+id/placeFragment"
                 android:icon="@android:drawable/ic_menu_help"
-                android:title="@string/recommendations"
+                android:title="@string/place"
                 app:showAsAction="always"/>
 
             <item
