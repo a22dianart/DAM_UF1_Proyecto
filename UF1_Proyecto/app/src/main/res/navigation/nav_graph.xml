@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/calendarFragment">
+    app:startDestination="@id/calendarFragment"
+    >
 
     <fragment
         android:id="@+id/calendarFragment"
@@ -11,13 +12,68 @@
         android:label="EverHorizon"
         tools:layout="@layout/fragment_calendar" />
     <fragment
-        android:id="@+id/mapFragment"
-        android:name="com.example.uf1_proyecto.MapFragment"
-        android:label="EverHorizom"
-        tools:layout="@layout/fragment_map" />
-    <fragment
         android:id="@+id/helpFragment"
         android:name="com.example.uf1_proyecto.HelpFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.uf1_proyecto.MapsFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/albumFragment2"
+        android:name="com.example.uf1_proyecto.AlbumFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_album" />
+    <fragment
+        android:id="@+id/citiesFragment"
+        android:name="com.example.uf1_proyecto.CitiesFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_cities" />
+    <fragment
+        android:id="@+id/countriesFragment"
+        android:name="com.example.uf1_proyecto.CountriesFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_countries" />
+    <fragment
+        android:id="@+id/itemsFragment2"
+        android:name="com.example.uf1_proyecto.ItemsFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_items" />
+    <fragment
+        android:id="@+id/notesFragment2"
+        android:name="com.example.uf1_proyecto.NotesFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_notes" />
+    <fragment
+        android:id="@+id/placeFragment2"
+        android:name="com.example.uf1_proyecto.PlaceFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_place" />
+    <fragment
+        android:id="@+id/recommendationsFragment2"
+        android:name="com.example.uf1_proyecto.RecommendationsFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_recommendations" />
+    <fragment
+        android:id="@+id/stayFragment2"
+        android:name="com.example.uf1_proyecto.StayFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_stay" />
+    <fragment
+        android:id="@+id/suitcaseFragment2"
+        android:name="com.example.uf1_proyecto.SuitcaseFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_suitcase" />
+    <fragment
+        android:id="@+id/transportFragment2"
+        android:name="com.example.uf1_proyecto.TransportFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_transport" />
+    <fragment
+        android:id="@+id/walletFragment2"
+        android:name="com.example.uf1_proyecto.WalletFragment"
+        android:label="EverHorizon"
+        tools:layout="@layout/fragment_wallet" />
 </navigation>

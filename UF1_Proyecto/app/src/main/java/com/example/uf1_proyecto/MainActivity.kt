@@ -29,13 +29,13 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment= supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
 
-        //Configuracion da barra de navegacion
+        //Configuracion da barra de navegacion(toolbar)
         val builderApp = AppBarConfiguration.Builder(navController.graph)
         val appBarConfiguration = builderApp.build()
 
         toolbar.setupWithNavController(navController, appBarConfiguration)
 
-        //PARA A BARRA DE ABAIXO
+        //PARA A BARRA DE ABAIXO(bottombar)
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNav.setupWithNavController(navController) //levanos a inbox se lle damos para atrass
 

@@ -5,7 +5,7 @@
     <!-- Resalte de elemento seleccionado -->
     <group android:checkableBehavior="single" >
         <item
-            android:id="@+id/inboxFragment"
+            android:id="@+id/citiesFragment"
             android:icon="@android:drawable/ic_dialog_email"
             android:title="@string/cities"
             app:showAsAction="always" />

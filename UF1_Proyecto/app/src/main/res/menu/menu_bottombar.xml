@@ -8,7 +8,7 @@
         android:title="@string/calendar_txt"
         app:showAsAction="always"/>
     <item
-        android:id="@+id/mapFragment"
+        android:id="@+id/mapsFragment"
         android:icon="@android:drawable/ic_dialog_map"
         android:title="@string/map_txt"
         app:showAsAction="always"/>
