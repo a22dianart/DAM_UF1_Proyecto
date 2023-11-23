@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CitiesFragment">
+    tools:context=".MainActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/ourense"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal|top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ourense"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/santiago1"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:layout_gravity="center_horizontal|top"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/santiago" />
+        <ImageView
+            android:id="@+id/santiago2"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:layout_gravity="center_horizontal|top"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/santiago" />
+        <ImageView
+            android:id="@+id/santiago3"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:layout_gravity="center_horizontal|top"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/santiago" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+

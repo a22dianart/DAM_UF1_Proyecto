@@ -37,42 +37,42 @@
         android:label="EverHorizon"
         tools:layout="@layout/fragment_countries" />
     <fragment
-        android:id="@+id/itemsFragment2"
+        android:id="@+id/itemsFragment"
         android:name="com.example.uf1_proyecto.ItemsFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_items" />
     <fragment
-        android:id="@+id/notesFragment2"
+        android:id="@+id/notesFragment"
         android:name="com.example.uf1_proyecto.NotesFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_notes" />
     <fragment
-        android:id="@+id/placeFragment2"
+        android:id="@+id/placeFragment"
         android:name="com.example.uf1_proyecto.PlaceFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_place" />
     <fragment
-        android:id="@+id/recommendationsFragment2"
+        android:id="@+id/recommendationsFragment"
         android:name="com.example.uf1_proyecto.RecommendationsFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_recommendations" />
     <fragment
-        android:id="@+id/stayFragment2"
+        android:id="@+id/stayFragment"
         android:name="com.example.uf1_proyecto.StayFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_stay" />
     <fragment
-        android:id="@+id/suitcaseFragment2"
+        android:id="@+id/suitcaseFragment"
         android:name="com.example.uf1_proyecto.SuitcaseFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_suitcase" />
     <fragment
-        android:id="@+id/transportFragment2"
+        android:id="@+id/transportFragment"
         android:name="com.example.uf1_proyecto.TransportFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_transport" />
     <fragment
-        android:id="@+id/walletFragment2"
+        android:id="@+id/walletFragment"
         android:name="com.example.uf1_proyecto.WalletFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_wallet" />

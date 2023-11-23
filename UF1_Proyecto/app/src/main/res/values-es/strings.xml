@@ -7,7 +7,10 @@
     <string name="map_txt">Mapa</string>
     <string name="info_txt">Info</string>
 
+    <string name="where">Dónde?</string>
+    <string name="how">Cómo?</string>
     <string name="next_trip">Tu próximo viaje</string>
+
     <string name="cities">Ciudades</string>
     <string name="countries">Países</string>
     <string name="transport">Transporte</string>

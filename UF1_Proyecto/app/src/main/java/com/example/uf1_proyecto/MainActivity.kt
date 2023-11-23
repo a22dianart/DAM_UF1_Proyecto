@@ -31,17 +31,23 @@ class MainActivity : AppCompatActivity() {
 
         //Configuracion da barra de navegacion(toolbar)
         val builderApp = AppBarConfiguration.Builder(navController.graph)
-        val appBarConfiguration = builderApp.build()
+        //PANEL LATERAL
 
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        val builder = AppBarConfiguration.Builder(navController.graph)
+        builder.setOpenableLayout(drawerLayout)
+        val appBarConfiguration = builderApp.build()
         toolbar.setupWithNavController(navController, appBarConfiguration)
+
 
         //PARA A BARRA DE ABAIXO(bottombar)
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNav.setupWithNavController(navController) //levanos a inbox se lle damos para atrass
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
+        navigationView.setupWithNavController(navController)
 
-        //PANEL LATERAL
-        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
-        builderApp.setOpenableLayout(drawerLayout)
+
+
 
     }
 

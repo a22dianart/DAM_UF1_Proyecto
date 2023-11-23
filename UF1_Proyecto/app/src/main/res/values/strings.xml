@@ -6,7 +6,11 @@
     <string name="map_txt">Map</string>
     <string name="info_txt">Info</string>
 
+    <string name="where">Where?</string>
+    <string name="how">How?</string>
     <string name="next_trip">Your next trip</string>
+
+
     <string name="cities">Cities</string>
     <string name="countries">Countries</string>
     <string name="transport">Transport</string>
