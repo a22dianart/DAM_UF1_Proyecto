@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -12,40 +12,163 @@
         android:orientation="vertical"
         android:padding="15dp"
         >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/ourense"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal|top"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ourense"
-            android:layout_marginTop="20dp"/>
+            <ImageView
+                android:id="@+id/santiago"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/santiago"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
 
-        <ImageView
-            android:id="@+id/santiago1"
-            android:layout_width="match_parent"
-            android:layout_height="222dp"
-            android:layout_gravity="center_horizontal|top"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/santiago" />
-        <ImageView
-            android:id="@+id/santiago2"
-            android:layout_width="match_parent"
-            android:layout_height="222dp"
-            android:layout_gravity="center_horizontal|top"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/santiago" />
-        <ImageView
-            android:id="@+id/santiago3"
-            android:layout_width="match_parent"
-            android:layout_height="222dp"
-            android:layout_gravity="center_horizontal|top"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/santiago" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="Santiago"
+                android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/santiago"
+                app:layout_constraintEnd_toEndOf="@+id/santiago"
+                app:layout_constraintStart_toStartOf="@+id/santiago"
+                app:layout_constraintTop_toTopOf="@+id/santiago" />
+
+            <ImageView
+                android:id="@+id/ourense"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ourense"
+                app:layout_constraintTop_toBottomOf="@id/santiago"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="Ourense"
+                android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/ourense"
+                app:layout_constraintEnd_toEndOf="@+id/ourense"
+                app:layout_constraintStart_toStartOf="@+id/ourense"
+                app:layout_constraintTop_toTopOf="@+id/ourense" />
+
+            <ImageView
+                android:id="@+id/madrid"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/madrid"
+                app:layout_constraintTop_toBottomOf="@id/ourense"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="Madrid"
+                android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/madrid"
+                app:layout_constraintEnd_toEndOf="@+id/madrid"
+                app:layout_constraintStart_toStartOf="@+id/madrid"
+                app:layout_constraintTop_toTopOf="@+id/madrid" />
+
+            <ImageView
+                android:id="@+id/barcelona"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/barcelona"
+                app:layout_constraintTop_toBottomOf="@id/madrid"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="Barcelona"
+                android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/barcelona"
+                app:layout_constraintEnd_toEndOf="@+id/barcelona"
+                app:layout_constraintStart_toStartOf="@+id/barcelona"
+                app:layout_constraintTop_toTopOf="@+id/barcelona" />
+
+            <ImageView
+                android:id="@+id/seville"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/seville"
+                app:layout_constraintTop_toBottomOf="@id/barcelona"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="Seville"
+                android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/seville"
+                app:layout_constraintEnd_toEndOf="@+id/seville"
+                app:layout_constraintStart_toStartOf="@+id/seville"
+                app:layout_constraintTop_toTopOf="@+id/seville" />
+
+            <ImageView
+                android:id="@+id/malaga"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/malaga"
+                app:layout_constraintTop_toBottomOf="@id/seville"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="Málaga"
+                android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/malaga"
+                app:layout_constraintEnd_toEndOf="@+id/malaga"
+                app:layout_constraintStart_toStartOf="@+id/malaga"
+                app:layout_constraintTop_toTopOf="@+id/malaga" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
     </LinearLayout>

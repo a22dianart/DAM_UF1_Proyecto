@@ -8,12 +8,12 @@
         <menu>
             <item
                 android:id="@+id/citiesFragment"
-                android:icon="@android:drawable/ic_dialog_email"
+                android:icon="@drawable/cities_icon"
                 android:title="@string/cities"
                 app:showAsAction="always" />
             <item
                 android:id="@+id/countriesFragment"
-                android:icon="@android:drawable/ic_menu_send"
+                android:icon="@drawable/countries_icon"
                 android:title="@string/countries"
                 app:showAsAction="always" />
         </menu>
@@ -24,12 +24,12 @@
         <menu>
             <item
                 android:id="@+id/transportFragment"
-                android:icon="@android:drawable/ic_dialog_email"
+                android:icon="@drawable/transport_icon"
                 android:title="@string/transport"
                 app:showAsAction="always" />
             <item
                 android:id="@+id/stayFragment"
-                android:icon="@android:drawable/ic_menu_send"
+                android:icon="@drawable/stay_icon"
                 android:title="@string/stay"
                 app:showAsAction="always" />
 
@@ -43,23 +43,23 @@
         <menu>
             <item
                 android:id="@+id/placeFragment"
-                android:icon="@android:drawable/ic_menu_help"
+                android:icon="@drawable/place_icon"
                 android:title="@string/place"
                 app:showAsAction="always"/>
             <item
                 android:id="@+id/recommendationsFragment"
-                android:icon="@drawable/common_full_open_on_phone"
+                android:icon="@drawable/recommendations_icon"
                 android:title="@string/recommendations"
                 app:showAsAction="always"/>
 
             <item
                 android:id="@+id/itemsFragment"
-                android:icon="@android:drawable/ic_menu_help"
+                android:icon="@drawable/suitcase_icon"
                 android:title="@string/items"
                 app:showAsAction="always"/>
             <item
                 android:id="@+id/notesFragment"
-                android:icon="@android:drawable/ic_menu_help"
+                android:icon="@drawable/notes_icon"
                 android:title="@string/notes"
                 app:showAsAction="always"/>
         </menu>

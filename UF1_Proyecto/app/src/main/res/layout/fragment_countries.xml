@@ -17,12 +17,13 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/ourense1"
+                android:id="@+id/spain"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ourense"
+                android:src="@drawable/spain"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="0dp" />
 
@@ -30,63 +31,119 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center"
-                android:text="Santiago"
+                android:text="Spain"
                 android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
                 android:textSize="40sp"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/ourense1"
-                app:layout_constraintVertical_bias="0.212" />
+                app:layout_constraintBottom_toBottomOf="@+id/spain"
+                app:layout_constraintEnd_toEndOf="@+id/spain"
+                app:layout_constraintStart_toStartOf="@+id/spain"
+                app:layout_constraintTop_toTopOf="@+id/spain" />
+
+            <ImageView
+                android:id="@+id/portugal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/portugal"
+                app:layout_constraintTop_toBottomOf="@id/spain"
+                tools:layout_editor_absoluteX="0dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center"
-                android:text="Santiago"
+                android:text="Portugal"
                 android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
                 android:textSize="40sp"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/ourense2" />
+                app:layout_constraintBottom_toBottomOf="@+id/portugal"
+                app:layout_constraintEnd_toEndOf="@+id/portugal"
+                app:layout_constraintStart_toStartOf="@+id/portugal"
+                app:layout_constraintTop_toTopOf="@+id/portugal" />
 
+            <ImageView
+                android:id="@+id/italy"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/italy"
+                app:layout_constraintTop_toBottomOf="@id/portugal"
+                tools:layout_editor_absoluteX="0dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center"
-                android:text="Santiago"
+                android:text="Italy"
                 android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
                 android:textSize="40sp"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/ourense3" />
+                app:layout_constraintBottom_toBottomOf="@+id/italy"
+                app:layout_constraintEnd_toEndOf="@+id/italy"
+                app:layout_constraintStart_toStartOf="@+id/italy"
+                app:layout_constraintTop_toTopOf="@+id/italy" />
+
+            <ImageView
+                android:id="@+id/france"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/france"
+                app:layout_constraintTop_toBottomOf="@id/italy"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="France"
+                android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/france"
+                app:layout_constraintEnd_toEndOf="@+id/france"
+                app:layout_constraintStart_toStartOf="@+id/france"
+                app:layout_constraintTop_toTopOf="@+id/france" />
+
+            <ImageView
+                android:id="@+id/uk"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/uk"
+                app:layout_constraintTop_toBottomOf="@id/france"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="United Kingdom"
+                android:textColor="@color/white"
+                android:background="@color/darkBlueTransparent"
+                android:textSize="40sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/uk"
+                app:layout_constraintEnd_toEndOf="@+id/uk"
+                app:layout_constraintStart_toStartOf="@+id/uk"
+                app:layout_constraintTop_toTopOf="@+id/uk" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/ourense3"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal|top"
-            android:layout_marginTop="472dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ourense" />
-
-        <ImageView
-            android:id="@+id/ourense2"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal|top"
-            android:layout_marginTop="344dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ourense" />
 
 
     </LinearLayout>

@@ -4,6 +4,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="mainOrange">#EA6736</color>
-    <color name="darkBlue">#982B09</color>
-    <color name="lightBlue">#035EE6</color>
+    <color name="darkBlue">#075a8f</color>
+    <color name="lightBlue">#0ac6cc</color>
+
+    <color name="darkBlueTransparent">#80075a8f</color> <!-- El primer byte (80) representa la opacidad -->
 </resources>
