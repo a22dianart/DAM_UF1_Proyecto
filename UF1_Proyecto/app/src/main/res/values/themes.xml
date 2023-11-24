@@ -3,9 +3,8 @@
     <style name="Base.Theme.UF1_Proyecto" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/mainOrange</item>
-        <item name="colorPrimaryVariant">@color/darkBlue</item>
-        <item name="colorAccent">@color/lightBlue</item>
-
+        <item name="colorPrimaryVariant">@color/lightBlue</item>
+        <item name="colorAccent">@color/darkBlue</item>
     </style>
 
     <style name="Theme.UF1_Proyecto" parent="Base.Theme.UF1_Proyecto" />
