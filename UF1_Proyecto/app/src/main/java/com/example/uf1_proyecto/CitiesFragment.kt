@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,8 +24,17 @@ class CitiesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cities, container, false)
+        val view = inflater.inflate(R.layout.fragment_cities, container, false)
+
+        val recyclerView: RecyclerView = view.findViewById(R.id.recyclercities)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        val adapter = CityAdapter(CityProvider.cities) // Necesitarás crear un adaptador según tus necesidades
+        recyclerView.adapter = adapter
+
+        return view
     }
+
+
+
 
 }

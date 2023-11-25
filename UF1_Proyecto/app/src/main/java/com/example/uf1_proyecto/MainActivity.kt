@@ -12,6 +12,8 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         //PARA A BARRA DE ARRIBA
         //Facer que a nosa barra de actividade sexa a barra principal
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)  //hai que seleccionar o toolbar de google
@@ -61,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         return NavigationUI.onNavDestinationSelected(item, navController)
                 ||super.onOptionsItemSelected(item)
     }
+
 
 
 }
