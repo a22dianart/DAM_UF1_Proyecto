@@ -3,8 +3,7 @@ package com.example.uf1_proyecto
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.uf1_proyecto.R
-import com.example.uf1_proyecto.City
+
 
 class CityAdapter(private var citiesList:List<City>) : RecyclerView.Adapter<CityViewHolder>(){
 

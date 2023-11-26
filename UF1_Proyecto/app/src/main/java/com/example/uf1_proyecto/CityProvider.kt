@@ -1,8 +1,5 @@
 package com.example.uf1_proyecto
 
-
-
-
 /**
  * Clase que vai ter toda a información das cidades que precisaremos mostrar
  */

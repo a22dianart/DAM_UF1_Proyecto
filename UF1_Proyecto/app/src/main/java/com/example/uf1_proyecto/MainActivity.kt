@@ -16,23 +16,24 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.uf1_proyecto.databinding.ActivityMainBinding
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-
-
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
 
         //PARA A BARRA DE ARRIBA
         //Facer que a nosa barra de actividade sexa a barra principal
-        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)  //hai que seleccionar o toolbar de google
-        setSupportActionBar(toolbar)
+        setSupportActionBar(binding.toolbar) //hai que seleccionar o toolbar de google
 
         //Host de navegación (grafo asociado)
         val navHostFragment= supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
@@ -40,28 +41,15 @@ class MainActivity : AppCompatActivity() {
 
         //Configuracion da barra de navegacion(toolbar)
         //PANEL LATERAL
-
-        val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
         val builder = AppBarConfiguration.Builder(navController.graph)
-        builder.setOpenableLayout(drawerLayout)
+        builder.setOpenableLayout(binding.drawerLayout)
         val appBarConfiguration = builder.build()
-        toolbar.setupWithNavController(navController, appBarConfiguration)
+        binding.toolbar.setupWithNavController(navController, appBarConfiguration)
 
 
         //PARA A BARRA DE ABAIXO(bottombar)
-        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        bottomNav.setupWithNavController(navController) //levanos a inbox se lle damos para atrass
-        val navigationView = findViewById<NavigationView>(R.id.nav_view)
-        navigationView.setupWithNavController(navController)
-
-
-
-
-        supportActionBar?.setDisplayShowHomeEnabled(false)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
-
-
-
+        binding.bottomNavigation.setupWithNavController(navController) //levanos a calendar se lle damos para atrass
+        binding.navView.setupWithNavController(navController)
 
 
     }
