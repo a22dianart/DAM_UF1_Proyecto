@@ -6,7 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.uf1_proyecto.R
 import com.example.uf1_proyecto.City
 
-class CityAdapter(private val citiesList:List<City>) : RecyclerView.Adapter<CityViewHolder>(){
+class CityAdapter(private var citiesList:List<City>) : RecyclerView.Adapter<CityViewHolder>(){
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CityViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return CityViewHolder(layoutInflater.inflate(R.layout.item_city,parent,false));
@@ -20,5 +21,12 @@ class CityAdapter(private val citiesList:List<City>) : RecyclerView.Adapter<City
     override fun getItemCount(): Int { //tamaño do listado que imos ter
         return citiesList.size
     }
+    fun updateCities(citiesList : List<City>){
+        this.citiesList = citiesList
+        notifyDataSetChanged()
+
+    }
+
+
 
 }

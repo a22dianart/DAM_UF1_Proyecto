@@ -2,10 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
-    <item android:id="@+id/helpFragment"
-        android:icon="@android:drawable/ic_dialog_dialer"
-        android:title="@string/info_txt"
-        app:showAsAction="always"
-        />
+
+    <item android:title="My personal space">
+        <menu>
+            <item
+                android:id="@+id/closet"
+                android:title="Closet"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/wallet"
+                android:title="Wallet"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/photos"
+                android:title="Photos"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+
+
 
 </menu>

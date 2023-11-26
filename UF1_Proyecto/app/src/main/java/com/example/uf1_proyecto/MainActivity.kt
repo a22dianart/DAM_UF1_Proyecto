@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.NavHostController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
@@ -23,6 +25,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
+
+
         //PARA A BARRA DE ARRIBA
         //Facer que a nosa barra de actividade sexa a barra principal
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)  //hai que seleccionar o toolbar de google
@@ -33,13 +39,12 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
         //Configuracion da barra de navegacion(toolbar)
-        val builderApp = AppBarConfiguration.Builder(navController.graph)
         //PANEL LATERAL
 
         val drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
         val builder = AppBarConfiguration.Builder(navController.graph)
         builder.setOpenableLayout(drawerLayout)
-        val appBarConfiguration = builderApp.build()
+        val appBarConfiguration = builder.build()
         toolbar.setupWithNavController(navController, appBarConfiguration)
 
 
@@ -48,6 +53,13 @@ class MainActivity : AppCompatActivity() {
         bottomNav.setupWithNavController(navController) //levanos a inbox se lle damos para atrass
         val navigationView = findViewById<NavigationView>(R.id.nav_view)
         navigationView.setupWithNavController(navController)
+
+
+
+
+        supportActionBar?.setDisplayShowHomeEnabled(false)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+
 
 
 

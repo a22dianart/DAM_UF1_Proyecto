@@ -6,6 +6,7 @@
     app:startDestination="@id/calendarFragment"
     >
 
+
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.uf1_proyecto.CalendarFragment"
