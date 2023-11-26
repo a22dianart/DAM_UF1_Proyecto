@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +7,53 @@
     android:orientation="vertical">
 
 
+    <TextView
+        android:id="@+id/TodayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Hoxe é 1 de marzo de 2023"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:background="@color/darkBlue"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black" />
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="16dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:firstDayOfWeek="@string/calendarFirstDay" />
 
-</FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="As mellores cidades para visitar nesta época son:"
+        android:fontFamily="sans-serif-black"
+        android:paddingBottom="10dp"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:background="@color/darkBlue"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerbetterplaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"/>
+
+
+
+
+</LinearLayout>

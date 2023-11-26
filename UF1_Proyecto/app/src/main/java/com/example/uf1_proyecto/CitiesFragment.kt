@@ -7,6 +7,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.uf1_proyecto.databinding.FragmentCitiesBinding
 
@@ -53,8 +57,5 @@ class CitiesFragment : Fragment() {
 
         return view
     }
-
-
-
 
 }

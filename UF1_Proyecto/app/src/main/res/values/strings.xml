@@ -2,6 +2,8 @@
     <string name="app_name">EverHorizon</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="calendarFirstDay">"0"</string>
+
     <string name="calendar_txt">Calendar</string>
     <string name="map_txt">Map</string>
     <string name="info_txt">Info</string>
