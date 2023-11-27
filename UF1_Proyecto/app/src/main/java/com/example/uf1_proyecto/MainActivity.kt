@@ -43,7 +43,18 @@ class MainActivity : AppCompatActivity() {
         //PANEL LATERAL
         val builder = AppBarConfiguration.Builder(navController.graph)
         builder.setOpenableLayout(binding.drawerLayout)
-        val appBarConfiguration = builder.build()
+
+
+        val appBarConfiguration = AppBarConfiguration( //facemos que estos fragmentos sexan tamén principal, para que non apareza o botón de ir para atrás
+            setOf(
+                R.id.calendarFragment,
+                R.id.mapsFragment,
+                R.id.helpFragment
+            )
+        )
+
+
+        //val appBarConfiguration = AppBarConfiguration(setOf())
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
 
 

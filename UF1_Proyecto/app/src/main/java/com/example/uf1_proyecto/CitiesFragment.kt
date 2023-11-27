@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.uf1_proyecto.databinding.FragmentCitiesBinding
 
 
-
 /**
  * Fragmento para mostrar todas as cidades que se atopan en CityProviderS
  */

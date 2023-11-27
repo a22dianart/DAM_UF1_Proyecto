@@ -50,7 +50,7 @@
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
                 android:background="@color/darkBlue"
-                android:paddingHorizontal="150dp"
+                android:paddingHorizontal="155dp"
                 android:paddingVertical="20dp"
                 android:text="Iberia"
                 android:textAlignment="textEnd"
@@ -71,12 +71,6 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="83dp"
-            android:text="Button" />
 
 
     </LinearLayout>
