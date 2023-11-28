@@ -30,7 +30,11 @@
         android:id="@+id/citiesFragment"
         android:name="com.example.uf1_proyecto.CitiesFragment"
         android:label="EverHorizon"
-        tools:layout="@layout/fragment_cities" />
+        tools:layout="@layout/fragment_cities" >
+        <action
+            android:id="@+id/action_citiesFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/countriesFragment"
         android:name="com.example.uf1_proyecto.CountriesFragment"
@@ -45,12 +49,21 @@
         android:id="@+id/notesFragment"
         android:name="com.example.uf1_proyecto.NotesFragment"
         android:label="EverHorizon"
-        tools:layout="@layout/fragment_notes" />
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/placeFragment"
         android:name="com.example.uf1_proyecto.PlaceFragment"
         android:label="EverHorizon"
-        tools:layout="@layout/fragment_place" />
+        tools:layout="@layout/fragment_place">
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
+
     <fragment
         android:id="@+id/recommendationsFragment"
         android:name="com.example.uf1_proyecto.RecommendationsFragment"

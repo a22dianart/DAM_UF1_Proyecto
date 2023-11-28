@@ -34,6 +34,7 @@ class PlaceFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        //val message = PlaceFragmentArgs.fromBundle(requireArguments()).message
         return inflater.inflate(R.layout.fragment_place, container, false)
     }
 

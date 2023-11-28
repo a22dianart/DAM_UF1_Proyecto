@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //PARA A BARRA DE ABAIXO(bottombar)
-        binding.bottomNavigation.setupWithNavController(navController) //levanos a calendar se lle damos para atrass
+        binding.bottomNavigation.setupWithNavController(navController)
         binding.navView.setupWithNavController(navController)
 
 
