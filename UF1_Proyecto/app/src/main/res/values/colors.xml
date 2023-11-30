@@ -7,5 +7,6 @@
     <color name="darkBlue">#075a8f</color>
     <color name="lightBlue">#0ac6cc</color>
 
+    <color name="salmon">#f4a460</color>
     <color name="darkBlueTransparent">#80075a8f</color> <!-- El primer byte (80) representa la opacidad -->
 </resources>
