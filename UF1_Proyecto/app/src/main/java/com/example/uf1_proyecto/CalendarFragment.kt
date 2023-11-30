@@ -31,7 +31,8 @@ class CalendarFragment : Fragment() {
         val view = binding.root
         //recycler
         binding.recyclerbetterplaces.layoutManager = LinearLayoutManager(requireContext())
-        val adapter = CityBestAdapter(CityProvider.cities, binding.calendarView)
+        val mainactivity = requireActivity() as MainActivity
+        val adapter = CityBestAdapter(mainactivity.pasarCidades(), binding.calendarView)
         binding.recyclerbetterplaces.adapter = adapter
 
         //edit text segun lingua que se esté usando no móbil

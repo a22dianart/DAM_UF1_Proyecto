@@ -31,7 +31,9 @@ class CitiesFragment : Fragment() {
         val view = binding.root
 
         binding.recyclercities.layoutManager = LinearLayoutManager(requireContext())
-        val adapter = CityAdapter(CityProvider.cities)
+        //val adapter = CityAdapter(CityProvider.cities)
+        val mainactivity = requireActivity() as MainActivity
+        val adapter =CityAdapter(mainactivity.pasarCidades())
         binding.recyclercities.adapter = adapter
 
         //PARA O DE BUSCAR
@@ -41,7 +43,7 @@ class CitiesFragment : Fragment() {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                val filteredCities = CityProvider.cities.filter { city ->
+                val filteredCities = mainactivity.cities.filter { city ->
                     city.name.contains(s.toString(), ignoreCase = true)
                 }
                 adapter.updateCities(filteredCities)

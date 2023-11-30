@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="My personal space">
-        <menu>
-            <item
-                android:id="@+id/closet"
-                android:title="Closet"
-                app:showAsAction="always" />
-            <item
-                android:id="@+id/wallet"
-                android:title="Wallet"
-                app:showAsAction="always" />
-            <item
-                android:id="@+id/photos"
-                android:title="Photos"
-                app:showAsAction="always" />
-        </menu>
-    </item>
-
-
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        app:showAsAction="never" />
 
 </menu>
