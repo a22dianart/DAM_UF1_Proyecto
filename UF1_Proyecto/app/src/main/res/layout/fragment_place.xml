@@ -120,21 +120,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fab"
-        android:layout_margin="16dp"
-        android:src="@android:drawable/ic_menu_send"
+        android:layout_margin="20dp"
+        android:src="@android:drawable/ic_input_add"
         android:layout_gravity="bottom|end"
-        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Surface"
+        style="@style/GreenFloatingActionButton"
         ></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/fab_help"
-        android:layout_margin="16dp"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Tertiary"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
         android:layout_gravity="top"
-        android:src="@android:drawable/ic_menu_help"
+        android:layout_margin="10dp"
+        android:src="@android:drawable/ic_input_add"
         app:layout_anchor="@id/collapsing_toolbar"
-        app:layout_anchorGravity="bottom|end"
-        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        app:layout_anchorGravity="bottom|end"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_help2"
+        style="@style/RedFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="top"
+        android:layout_margin="80dp"
+        android:src="@android:drawable/bottom_bar"
+        app:layout_anchor="@id/collapsing_toolbar"
+        app:layout_anchorGravity="bottom|end"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

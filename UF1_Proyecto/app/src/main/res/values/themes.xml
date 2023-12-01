@@ -3,9 +3,15 @@
     <style name="Base.Theme.UF1_Proyecto" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/mainOrange</item>
+        <item name="colorTertiary">@color/green</item>
         <item name="colorPrimaryVariant">@color/lightBlue</item>
-        <item name="colorAccent">@color/darkBlue</item>
+        <item name="colorAccent">@color/green</item>
     </style>
-
+    <style name="GreenFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/green</item>
+    </style>
+    <style name="RedFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/red</item>
+    </style>
     <style name="Theme.UF1_Proyecto" parent="Base.Theme.UF1_Proyecto" />
 </resources>
