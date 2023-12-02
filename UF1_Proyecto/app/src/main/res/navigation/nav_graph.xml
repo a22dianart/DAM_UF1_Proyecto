@@ -50,9 +50,6 @@
         android:name="com.example.uf1_proyecto.NotesFragment"
         android:label="EverHorizon"
         tools:layout="@layout/fragment_notes" >
-        <action
-            android:id="@+id/action_notesFragment_to_placeFragment"
-            app:destination="@id/placeFragment" />
     </fragment>
     <fragment
         android:id="@+id/placeFragment"
@@ -60,7 +57,7 @@
         android:label="EverHorizon"
         tools:layout="@layout/fragment_place">
         <argument
-            android:name="message"
+            android:name="name"
             app:argType="string" />
     </fragment>
 

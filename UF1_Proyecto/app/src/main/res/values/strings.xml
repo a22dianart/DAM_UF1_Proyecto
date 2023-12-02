@@ -25,4 +25,26 @@
     <string name="wallet">Wallet</string>
     <string name="album">Album</string>
 
+    <!--Amman-->
+    <string name="Amman">Amman</string>
+    <string name="amman_best">Spring</string>
+    <string name="amman_country">Jordan</string>
+    <string name="amman_description">Amman, the vibrant capital of Jordan, seamlessly fuses the old and the new, creating a cityscape that unfolds across seven hills. Its skyline, adorned with a mix of contemporary structures and historical landmarks, paints a picture of an evolving metropolis. As you navigate its bustling streets, Amman welcomes with an atmosphere shaped by rich cultural nuances and the warmth of its people. The city\'s charm lies in the fusion of traditional markets with modern urban life, creating a dynamic setting where ancient history meets a burgeoning cosmopolitan identity. Amman invites exploration, offering a captivating narrative through its streets, neighborhoods, and the distinctive character of its urban landscape.</string>
+    <string name="amman_activities1">Explore the Amman Citadel</string>
+    <string name="amman_activities2">Tour the Roman Theater</string>
+    <string name="amman_activities3">Stroll along Rainbow Street</string>
+    <string name="amman_activities4">Visit the Jordan Archaeological Museum</string>
+    <string name="amman_activities5">Experience Al-Balad Market</string>
+    <string name="amman_activities6">Wander Through Downtown Amman</string>
+    <string name="amman_places1">Amman Citadel</string>
+    <string name="amman_places2">Roman Theater</string>
+    <string name="amman_places3">Rainbow Street</string>
+    <string name="amman_places4">Jordan Archaeological Museum</string>
+    <string name="amman_places5">King Hussein Mosque</string>
+    <string name="amman_places6">Al-Balad Market</string>
+    <string name="amman_typical1">Mansaf</string>
+    <string name="amman_typical2">Falafel</string>
+    <string name="amman_typical3">Kebab</string>
+    <string name="amman_typical4">Kunafa</string>
+    <string name="amman_languages">Arabic, English</string>
 </resources>

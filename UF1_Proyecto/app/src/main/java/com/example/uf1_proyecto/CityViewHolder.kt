@@ -1,6 +1,7 @@
 package com.example.uf1_proyecto
 
 
+import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -30,8 +31,11 @@ class CityViewHolder(view:View): RecyclerView.ViewHolder(view){
 
         binding.cityImage.setOnClickListener{
             Toast.makeText(binding.cityImage.context, cityModel.name, Toast.LENGTH_SHORT).show()
-            //val actions =CitiesFragmentDirections.
-            view2.findNavController().navigate(R.id.action_citiesFragment_to_placeFragment)
+
+            val bundle = Bundle()
+            bundle.putString("cityName", cityModel.name)
+
+            view2.findNavController().navigate(R.id.action_citiesFragment_to_placeFragment, bundle)
         }
 
 

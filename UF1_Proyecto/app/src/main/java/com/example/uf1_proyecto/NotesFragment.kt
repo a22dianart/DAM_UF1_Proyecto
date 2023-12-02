@@ -30,7 +30,7 @@ class NotesFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_notes, container, false)
         val buttonNext = view.findViewById<Button>(R.id.boton)
         buttonNext.setOnClickListener{
-            view.findNavController().navigate(R.id.action_notesFragment_to_placeFragment)
+
         }
         return view
     }

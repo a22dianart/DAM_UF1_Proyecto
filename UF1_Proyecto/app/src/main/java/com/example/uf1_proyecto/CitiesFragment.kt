@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -48,6 +49,7 @@ class CitiesFragment : Fragment() {
                 }
                 adapter.updateCities(filteredCities)
 
+
             }
 
             override fun afterTextChanged(s: Editable?) {
@@ -58,5 +60,7 @@ class CitiesFragment : Fragment() {
 
         return view
     }
+
+
 
 }

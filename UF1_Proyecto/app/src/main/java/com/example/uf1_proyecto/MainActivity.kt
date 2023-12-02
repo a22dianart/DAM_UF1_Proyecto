@@ -78,65 +78,40 @@ class MainActivity : AppCompatActivity() {
         fun pasarCidades(): List<City> {
             val cities = listOf<City>(
                 City(
-                    getString(R.string.how),
-                    "fisfh",
-                    "Summer"
-
-                ),
-                City(
-                    "Seúl",
-                    "kjsjkf",
-                    "Summer",
-
+                    getString(R.string.Amman),
+                    getDrawable(R.drawable.amman)!!,
+                    getString(R.string.amman_best),
+                    getString(R.string.amman_country),
+                    getString(R.string.amman_description),
+                    listOf(
+                        getString(R.string.amman_activities1),
+                        getString(R.string.amman_activities2),
+                        getString(R.string.amman_activities3),
+                        getString(R.string.amman_activities4),
+                        getString(R.string.amman_activities5),
+                        getString(R.string.amman_activities6)
                     ),
-                City(
-                    "Sevilla",
-                    "https://raw.githubusercontent.com/a22dianart/DAM_UF1_Proyecto/main/UF1_Proyecto/app/src/main/res/drawable/seville.jpg",
-                    "Autumn"
-                ),
-                City(
-                    "Barcelona",
-                    "@drawable/barcelona",
-                    "Autumn"
-                ),
-                City(
-                    "Madrid",
-                    "@drawable/madrid",
-                    "Autumn"
-                ),
-                City(
-                    "Málaga",
-                    "@drawable/malaga",
-                    "Winter"
-                ),
-                City(
-                    "jkbj",
-                    "jnscjsn",
-                    "Autumn"
-                ),
-                City(
-                    "dkhakf",
-                    "fkjjsfk",
-                    "Autumn"
-                ),
-                City(
-                    "hfkhsf",
-                    "sjdfkds",
-                    "Autumn"
-                ),
-                City(
-                    "Amsterdam",
-                    "ksfks",
-                    "Autumn"
-                ),
-                City(
-                    "sgfdgg",
-                    "vkjsjks",
-                    "Autumn"
+                    listOf(
+                        getString(R.string.amman_places1),
+                        getString(R.string.amman_places2),
+                        getString(R.string.amman_places3),
+                        getString(R.string.amman_places4),
+                        getString(R.string.amman_places5),
+                        getString(R.string.amman_places6)
+                    ),
+                    listOf(
+                        getString(R.string.amman_typical1),
+                        getString(R.string.amman_typical2),
+                        getString(R.string.amman_typical3),
+                        getString(R.string.amman_typical4)
+                    ),
+                    getString(R.string.amman_languages)
                 )
 
-
             )
+
+
+
             this.cities= cities
             return cities
         }
