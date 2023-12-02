@@ -24,4 +24,9 @@
     <string name="suitcase">Maleta</string>
     <string name="wallet">Billeteira</string>
     <string name="album">Álbum</string>
+
+    <!--SelectedCityFragment-->
+    <string name ="activities">Actividades que se poden facer:</string>
+    <string name ="places">Lugares para visitar:</string>
+    <string name="typical">Comida típica que se pode probar:</string>
 </resources>

@@ -33,6 +33,7 @@ Santiago de Compostela como exemplo
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/santiago"
+                android:contentDescription="imaxe da cidade"
                 app:layout_collapseMode="parallax"/>
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
@@ -51,13 +52,260 @@ Santiago de Compostela como exemplo
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="20px"
+            android:padding="10dp"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/country_and_languages"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/darkBlue"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="5dp"
+                tools:text="Está en España e fálase galego e español" />
+            <TextView
+                android:id="@+id/descriptionPlace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/darkBlue"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:padding="15dp"
+                tools:text="Santiago de Compostela, o corazón espiritual de España, acolle aos visitantes coa súa arquitectura histórica, rutas de peregrinación e riqueza cultural. Desde a catedral de Santiago de Compostela ata a convulsa Praza do Obradoiro, a cidade ofrece un percorrido polo encanto medieval. Explora o Casco Histórico declarado Patrimonio da Humanidade pola UNESCO, visita o Museo do Pobo Galego e experimenta a peregrinación do Camiño de Santiago. O significado relixioso de Santiago de Compostela, a gastronomía tradicional galega e o ambiente animado das súas prazas fan dela un destino onde conflúen espiritualidade e historia." />
 
-                android:text="@string/stay" />
+            <TextView
+                android:id="@+id/activitiestxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/activities" />
+
+            <TextView
+                android:id="@+id/activity1txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Visita a Catedral de Santiago de Compostela" />
+
+            <TextView
+                android:id="@+id/activity2txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Explorar a praza do Obradoiro" />
+            <TextView
+                android:id="@+id/activity3txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Pasear pola Zona Vella" />
+
+            <TextView
+                android:id="@+id/activity4txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Visita o Museo do Pobo Galego" />
+            <TextView
+                android:id="@+id/activity5txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Vive o Camiño de Santiago" />
+
+            <TextView
+                android:id="@+id/activity6txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Saborea a cociña tradicional galega" />
+
+            <TextView
+                android:id="@+id/placestxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/places" />
+
+            <TextView
+                android:id="@+id/place1txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Catedral de Santiago de Compostela" />
+
+            <TextView
+                android:id="@+id/place2txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Praza do Obradoiro" />
+
+            <TextView
+                android:id="@+id/place3txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Zona Vella" />
+            <TextView
+                android:id="@+id/place4txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Museo do Pobo Galego" />
+            <TextView
+                android:id="@+id/place5txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Camiño de Santiago" />
+            <TextView
+                android:id="@+id/place6txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Parque da Alameda" />
+
+            <TextView
+                android:id="@+id/typicaltxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/typical"/>
+            <TextView
+                android:id="@+id/typical1txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Polbo á feira" />
+
+            <TextView
+                android:id="@+id/typical2txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Tarta de Santiago" />
+            <TextView
+                android:id="@+id/typical3txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Empanadas" />
+            <TextView
+                android:id="@+id/typical4txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:background="@color/lightBlue"
+                android:textColor="@color/darkBlue"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:text="Queimada" />
+
+
+
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

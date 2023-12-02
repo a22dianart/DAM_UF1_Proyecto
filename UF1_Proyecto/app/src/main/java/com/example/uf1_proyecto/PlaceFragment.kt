@@ -1,41 +1,87 @@
 package com.example.uf1_proyecto
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.bumptech.glide.Glide
+import com.example.uf1_proyecto.databinding.FragmentPlaceBinding
 import com.google.android.material.appbar.CollapsingToolbarLayout
+import java.time.LocalDate
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [PlaceFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class PlaceFragment : Fragment() {
+    private var _binding: FragmentPlaceBinding? = null
+    private val binding get() = _binding!!
 
+
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        //val message = PlaceFragmentArgs.fromBundle(requireArguments()).message
-        val view = inflater.inflate(R.layout.fragment_place, container, false)
+        _binding = FragmentPlaceBinding.inflate(inflater, container, false)
+        val view = binding.root
+        val mainactivity = requireActivity() as MainActivity
 
         // Recupera el nombre de la ciudad del argumento
-        val cityName = arguments?.getString("cityName")
+        val ciudades: List<City> = mainactivity.pasarCidades()
+        val cityName = arguments?.getString("cityName")!!
+        val cidade = obtainCity(ciudades, cityName)!! //vai estar si ou si xa que fixen click sobre esa cidade
 
-        val collapsingToolbarLayout = view.findViewById<CollapsingToolbarLayout>(R.id.collapsing_toolbar)
-        collapsingToolbarLayout.title = cityName
+        binding.collapsingToolbar.title=cidade.name
+        Glide.with(binding.placeImage.context).load(cidade.photo).into(binding.placeImage) //cargamos a imaxe de internet
+        binding.descriptionPlace.text=cidade.description
 
+        //Poñemos as actividades
+        binding.activity1txt.text=cidade.activities.get(0)
+        binding.activity2txt.text=cidade.activities.get(1)
+        binding.activity3txt.text=cidade.activities.get(2)
+        binding.activity4txt.text=cidade.activities.get(3)
+        binding.activity5txt.text=cidade.activities.get(4)
+        binding.activity6txt.text=cidade.activities.get(5)
+
+        //Poñemos os sitios
+        binding.place1txt.text=cidade.places.get(0)
+        binding.place2txt.text=cidade.places.get(1)
+        binding.place3txt.text=cidade.places.get(2)
+        binding.place4txt.text=cidade.places.get(3)
+        binding.place5txt.text=cidade.places.get(4)
+        binding.place6txt.text=cidade.places.get(5)
+
+
+        //Poñemos a comida
+        binding.typical1txt.text=cidade.typical.get(0)
+        binding.typical2txt.text=cidade.typical.get(1)
+        binding.typical3txt.text=cidade.typical.get(2)
+        binding.typical4txt.text=cidade.typical.get(3)
+
+
+        //Para poñer o texto que di o páis no que está e as linguas que se falan
+        val configuration = resources.configuration
+        val lingua = configuration.locales[0].language
+
+        val pais = cidade.country
+        val linguas =cidade.languages
+        if (lingua.equals("gl")){
+            binding.countryAndLanguages.text="Está en $pais e fálase $linguas"
+        }else if (lingua.equals("es")){
+            binding.countryAndLanguages.text="Está en $pais y se habla $linguas"
+        } else{
+            binding.countryAndLanguages.text="It is in $pais and people speak $linguas"
+        }
 
         return view
+    }
+
+    /**
+     * Función para obter a cidade na que fixemos click
+     */
+    fun obtainCity(ciudades: List<City>, nombre: String): City? {
+        return ciudades.find { it.name == nombre }
     }
 
     }

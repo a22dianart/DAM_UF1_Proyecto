@@ -6,11 +6,7 @@
     tools:context=".HelpFragment"
     android:orientation="vertical">
 
-    <?xml version="1.0" encoding="utf-8"?>
 
-    <!--
-    Santiago de Compostela como exemplo
-    -->
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"

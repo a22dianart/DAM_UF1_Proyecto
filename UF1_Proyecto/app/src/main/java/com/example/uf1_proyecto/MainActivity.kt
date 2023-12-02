@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
             val cities = listOf<City>(
                 City(
                     getString(R.string.Amman),
-                    getDrawable(R.drawable.amman)!!,
+                    "https://i.natgeofe.com/n/cb246f4f-035b-4054-9176-34936da16865/king-abdullah-mosque-amman-jordan.jpg",
                     getString(R.string.amman_best),
                     getString(R.string.amman_country),
                     getString(R.string.amman_description),

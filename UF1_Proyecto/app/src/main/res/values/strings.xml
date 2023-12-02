@@ -25,6 +25,13 @@
     <string name="wallet">Wallet</string>
     <string name="album">Album</string>
 
+    <!--SelectedCityFragment-->
+    <string name ="activities">Activities that can be done there:</string>
+    <string name ="places">Places to visit:</string>
+    <string name="typical">Typical food you can try:</string>
+
+
+
     <!--Amman-->
     <string name="Amman">Amman</string>
     <string name="amman_best">Spring</string>
