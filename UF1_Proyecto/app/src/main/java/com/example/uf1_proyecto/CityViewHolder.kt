@@ -30,12 +30,12 @@ class CityViewHolder(view:View): RecyclerView.ViewHolder(view){
 
 
         binding.cityImage.setOnClickListener{
-            Toast.makeText(binding.cityImage.context, cityModel.name, Toast.LENGTH_SHORT).show()
+
 
             val bundle = Bundle()
             bundle.putString("cityName", cityModel.name)
 
-            view2.findNavController().navigate(R.id.action_citiesFragment_to_placeFragment, bundle)
+            view2.findNavController().navigate(R.id.action_citiesFragment_to_selectedCityFragment, bundle)
         }
 
 

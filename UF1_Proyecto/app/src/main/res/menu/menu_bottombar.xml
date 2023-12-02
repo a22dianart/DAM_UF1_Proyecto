@@ -5,18 +5,18 @@
     <item
         android:id="@+id/calendarFragment"
         android:icon="@drawable/calendar_icon"
-        android:title="@string/calendar_txt"
+        android:title="@string/calendar"
         app:showAsAction="always"/>
     <item
         android:id="@+id/mapsFragment"
         android:icon="@android:drawable/ic_dialog_map"
-        android:title="@string/map_txt"
+        android:title="@string/map"
         app:showAsAction="always"/>
 
     <item
-        android:id="@+id/helpFragment"
-        android:icon="@android:drawable/ic_dialog_info"
-        android:title="@string/info_txt"
+        android:id="@+id/tripFragment"
+        android:icon="@drawable/my_trips_icon"
+        android:title="@string/my_trips"
         app:showAsAction="always"/>
 
 </menu>

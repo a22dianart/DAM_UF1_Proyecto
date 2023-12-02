@@ -23,48 +23,32 @@
     <item android:title="@string/how">
         <menu>
             <item
-                android:id="@+id/transportFragment"
-                android:icon="@drawable/transport_icon"
-                android:title="@string/transport"
+                android:id="@+id/planeFragment"
+                android:icon="@drawable/plane_icon"
+                android:title="@string/plane"
                 app:showAsAction="always" />
+            <item
+                android:id="@+id/trainFragment"
+                android:icon="@drawable/train_icon"
+                android:title="@string/train"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/busFragment"
+                android:icon="@drawable/bus_icon"
+                android:title="@string/bus"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/boatFragment"
+                android:icon="@drawable/boat_icon"
+                android:title="@string/boat"
+                app:showAsAction="always" />
+
             <item
                 android:id="@+id/stayFragment"
                 android:icon="@drawable/stay_icon"
                 android:title="@string/stay"
                 app:showAsAction="always" />
-
         </menu>
+
     </item>
-
-
-
-
-    <item android:title="@string/next_trip">
-        <menu>
-            <item
-                android:id="@+id/placeFragment"
-                android:icon="@drawable/place_icon"
-                android:title="@string/place"
-                app:showAsAction="always"/>
-            <item
-                android:id="@+id/recommendationsFragment"
-                android:icon="@drawable/recommendations_icon"
-                android:title="@string/recommendations"
-                app:showAsAction="always"/>
-
-            <item
-                android:id="@+id/itemsFragment"
-                android:icon="@drawable/suitcase_icon"
-                android:title="@string/items"
-                app:showAsAction="always"/>
-            <item
-                android:id="@+id/notesFragment"
-                android:icon="@drawable/notes_icon"
-                android:title="@string/notes"
-                app:showAsAction="always"/>
-        </menu>
-    </item>
-
-
-
 </menu>

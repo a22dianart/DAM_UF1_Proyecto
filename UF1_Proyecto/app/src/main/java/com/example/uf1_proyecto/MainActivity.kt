@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.calendarFragment,
                 R.id.mapsFragment,
-                R.id.helpFragment
+                R.id.tripFragment
             ), binding.drawerLayout
         )
         builder.build()
@@ -109,6 +109,7 @@ class MainActivity : AppCompatActivity() {
                 )
 
             )
+
 
 
 

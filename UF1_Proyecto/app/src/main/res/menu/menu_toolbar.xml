@@ -2,9 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <item
-        android:id="@+id/action_settings"
-        android:title="Settings"
-        app:showAsAction="never" />
+        android:id="@+id/infoFragment"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="always"
+        android:title="@string/info" />
 
 </menu>

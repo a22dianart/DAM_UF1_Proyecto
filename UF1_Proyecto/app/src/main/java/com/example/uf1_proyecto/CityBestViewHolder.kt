@@ -14,8 +14,6 @@ class CityBestViewHolder(view: View): RecyclerView.ViewHolder(view){
     fun render(cityModel: City){
         binding.bestChoice.text=cityModel.name
 
-
-
     }
 
 }

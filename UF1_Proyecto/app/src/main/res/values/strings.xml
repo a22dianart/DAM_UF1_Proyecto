@@ -4,30 +4,27 @@
 
     <string name="calendarFirstDay">"0"</string>
 
-    <string name="calendar_txt">Calendar</string>
-    <string name="map_txt">Map</string>
-    <string name="info_txt">Info</string>
+    <string name="info">Info</string>
+
+    <string name="calendar">Calendar</string>
+    <string name="map">Map</string>
+    <string name="my_trips">My trips</string>
 
     <string name="where">Where?</string>
     <string name="how">How?</string>
-    <string name="next_trip">Your next trip</string>
-
 
     <string name="cities">Cities</string>
     <string name="countries">Countries</string>
-    <string name="transport">Transport</string>
+    <string name="plane">By plane</string>
+    <string name="train">By train</string>
+    <string name="bus">By bus</string>
+    <string name="boat">By boat</string>
     <string name="stay">Stay</string>
-    <string name="place">Place</string>
-    <string name="recommendations">Recommendations</string>
-    <string name="items">Items</string>
-    <string name="notes">Notes</string>
-    <string name="suitcase">Suitcase</string>
-    <string name="wallet">Wallet</string>
-    <string name="album">Album</string>
+
 
     <!--SelectedCityFragment-->
-    <string name ="activities">Activities that can be done there:</string>
-    <string name ="places">Places to visit:</string>
+    <string name="activities">Activities that can be done there:</string>
+    <string name="places">Places to visit:</string>
     <string name="typical">Typical food you can try:</string>
 
 

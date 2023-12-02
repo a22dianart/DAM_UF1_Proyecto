@@ -5,28 +5,27 @@
 
     <string name="calendarFirstDay">"2"</string>
 
-    <string name="calendar_txt">Calendario</string>
-    <string name="map_txt">Mapa</string>
-    <string name="info_txt">Info</string>
+    <string name="info">Info</string>
+
+    <string name="calendar">Calendario</string>
+    <string name="map">Mapa</string>
+    <string name="my_trips">Mis viajes</string>
 
     <string name="where">Dónde?</string>
     <string name="how">Cómo?</string>
-    <string name="next_trip">Tu próximo viaje</string>
 
     <string name="cities">Ciudades</string>
     <string name="countries">Países</string>
-    <string name="transport">Transporte</string>
+    <string name="plane">En avión</string>
+    <string name="train">En tren</string>
+    <string name="bus">En bus</string>
+    <string name="boat">En barco</string>
     <string name="stay">Estancia</string>
-    <string name="place">Lugar</string>
-    <string name="recommendations">Recomendaciones</string>
-    <string name="items">Items</string>
-    <string name="notes">Notas</string>
-    <string name="suitcase">Maleta</string>
-    <string name="wallet">Billetera</string>
-    <string name="album">Álbum</string>
+
 
     <!--SelectedCityFragment-->
     <string name ="activities">Actividades que se pueden hacer:</string>
     <string name ="places">Lugares para visitar:</string>
     <string name="typical">Comida típica que se puede probar:</string>
+
 </resources>

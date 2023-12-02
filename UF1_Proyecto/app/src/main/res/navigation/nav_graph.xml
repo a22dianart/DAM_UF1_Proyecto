@@ -9,81 +9,76 @@
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.uf1_proyecto.CalendarFragment"
-        android:label="EverHorizon"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_calendar" />
-    <fragment
-        android:id="@+id/helpFragment"
-        android:name="com.example.uf1_proyecto.HelpFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_help" />
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.example.uf1_proyecto.MapsFragment"
-        android:label="EverHorizon"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_maps" />
-    <fragment
-        android:id="@+id/albumFragment2"
-        android:name="com.example.uf1_proyecto.AlbumFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_album" />
     <fragment
         android:id="@+id/citiesFragment"
         android:name="com.example.uf1_proyecto.CitiesFragment"
-        android:label="EverHorizon"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_cities" >
         <action
-            android:id="@+id/action_citiesFragment_to_placeFragment"
-            app:destination="@id/placeFragment" />
+            android:id="@+id/action_citiesFragment_to_selectedCityFragment"
+            app:destination="@id/selectedCityFragment" />
     </fragment>
     <fragment
         android:id="@+id/countriesFragment"
         android:name="com.example.uf1_proyecto.CountriesFragment"
-        android:label="EverHorizon"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_countries" />
+
     <fragment
-        android:id="@+id/itemsFragment"
-        android:name="com.example.uf1_proyecto.ItemsFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_items" />
+        android:id="@+id/stayFragment"
+        android:name="com.example.uf1_proyecto.StayFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_stay" />
     <fragment
-        android:id="@+id/notesFragment"
-        android:name="com.example.uf1_proyecto.NotesFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_notes" >
-    </fragment>
+        android:id="@+id/boatFragment"
+        android:name="com.example.uf1_proyecto.BoatFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_boat" />
     <fragment
-        android:id="@+id/placeFragment"
-        android:name="com.example.uf1_proyecto.PlaceFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_place">
+        android:id="@+id/busFragment"
+        android:name="com.example.uf1_proyecto.BusFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_bus" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.uf1_proyecto.InfoFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/planeFragment"
+        android:name="com.example.uf1_proyecto.PlaneFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_plane" />
+    <fragment
+        android:id="@+id/selectedCityFragment"
+        android:name="com.example.uf1_proyecto.SelectedCityFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_selected_city">
         <argument
             android:name="name"
             app:argType="string" />
     </fragment>
 
     <fragment
-        android:id="@+id/recommendationsFragment"
-        android:name="com.example.uf1_proyecto.RecommendationsFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_recommendations" />
+        android:id="@+id/selectedCountryFragment"
+        android:name="com.example.uf1_proyecto.SelectedCountryFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_selected_country" />
     <fragment
-        android:id="@+id/stayFragment"
-        android:name="com.example.uf1_proyecto.StayFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_stay" />
+        android:id="@+id/trainFragment"
+        android:name="com.example.uf1_proyecto.TrainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_train" />
     <fragment
-        android:id="@+id/suitcaseFragment"
-        android:name="com.example.uf1_proyecto.SuitcaseFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_suitcase" />
-    <fragment
-        android:id="@+id/transportFragment"
-        android:name="com.example.uf1_proyecto.TransportFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_transport" />
-    <fragment
-        android:id="@+id/walletFragment"
-        android:name="com.example.uf1_proyecto.WalletFragment"
-        android:label="EverHorizon"
-        tools:layout="@layout/fragment_wallet" />
+        android:id="@+id/tripFragment"
+        android:name="com.example.uf1_proyecto.TripFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_trip" />
 </navigation>
