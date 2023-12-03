@@ -28,4 +28,19 @@
     <string name ="places">Lugares para visitar:</string>
     <string name="typical">Comida típica que se puede probar:</string>
 
+    <!--item_trip_fragment-->
+    <string name="from">Desde:</string>
+    <string name="to">Hasta:</string>
+    <string name="dateSeparation">/</string>
+    <string name="transport">Transporte:</string>
+    <string name="staytxt">Estancia:</string>
+    <string name="activitiestxt">Actividades:</string>
+    <string name="notestxt">Notas:</string>
+    <string name="notesEditText">Escribe una nota (no más de 3 líneas)</string>
+
+    <!--fragment_trip-->
+    <string name="noTrips">No hay viajes planificados aún. Si deseas planificar un viaje, selecciona una ciudad en la ventana de ciudades o un país en la ventana de países.</string>
+
+
+
 </resources>

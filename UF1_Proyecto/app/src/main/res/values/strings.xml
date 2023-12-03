@@ -27,6 +27,19 @@
     <string name="places">Places to visit:</string>
     <string name="typical">Typical food you can try:</string>
 
+    <!--item_trip_fragment-->
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="dateSeparation">/</string>
+    <string name="transport">Transport:</string>
+    <string name="staytxt">Stay:</string>
+    <string name="activitiestxt">Activities:</string>
+    <string name="notestxt">Notes:</string>
+    <string name="notesEditText">Write your note (no more than 3 lines)</string>
+
+    <!--fragment_trip-->
+    <string name="noTrips">There are no trips planned yet. If you want to plan a trip, select a city in the cities window or a country in the countries window</string>
+
 
 
     <!--Amman-->
@@ -51,4 +64,5 @@
     <string name="amman_typical3">Kebab</string>
     <string name="amman_typical4">Kunafa</string>
     <string name="amman_languages">Arabic, English</string>
+
 </resources>
