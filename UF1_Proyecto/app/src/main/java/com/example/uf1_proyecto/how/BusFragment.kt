@@ -9,36 +9,36 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.uf1_proyecto.MainActivity
-import com.example.uf1_proyecto.databinding.FragmentPlaneBinding
+import com.example.uf1_proyecto.databinding.FragmentBusBinding
 
 
-class PlaneFragment : Fragment() {
-    private var _binding: FragmentPlaneBinding? = null
+class BusFragment : Fragment() {
+    private var _binding: FragmentBusBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentPlaneBinding.inflate(inflater, container, false)
+        _binding = FragmentBusBinding.inflate(inflater, container, false)
         val view = binding.root
         //recycler
-        binding.recyclerplane.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerbus.layoutManager = LinearLayoutManager(requireContext())
         val mainactivity = requireActivity() as MainActivity
-        val adapter = HowAdapter(mainactivity.pasarPlaneCompanies())
-        binding.recyclerplane.adapter = adapter
+        val adapter = HowAdapter(mainactivity.pasarBusCompanies())
+        binding.recyclerbus.adapter = adapter
 
         //PARA O DE BUSCAR
-        binding.planeFilter.addTextChangedListener(object : TextWatcher {
+        binding.busFilter.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 //Non fai nada
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                val filteredPlane = mainactivity.planeCompanies.filter { company ->
+                val filteredBus = mainactivity.busCompanies.filter { company ->
                     company.name.contains(s.toString(), ignoreCase = true)
                 }
-                adapter.updateCompanies(filteredPlane)
+                adapter.updateCompanies(filteredBus)
 
 
             }

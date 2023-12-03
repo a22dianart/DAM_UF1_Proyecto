@@ -9,36 +9,37 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.uf1_proyecto.MainActivity
-import com.example.uf1_proyecto.databinding.FragmentPlaneBinding
+
+import com.example.uf1_proyecto.databinding.FragmentStayBinding
 
 
-class PlaneFragment : Fragment() {
-    private var _binding: FragmentPlaneBinding? = null
+class StayFragment : Fragment() {
+    private var _binding: FragmentStayBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentPlaneBinding.inflate(inflater, container, false)
+        _binding = FragmentStayBinding.inflate(inflater, container, false)
         val view = binding.root
         //recycler
-        binding.recyclerplane.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerstay.layoutManager = LinearLayoutManager(requireContext())
         val mainactivity = requireActivity() as MainActivity
-        val adapter = HowAdapter(mainactivity.pasarPlaneCompanies())
-        binding.recyclerplane.adapter = adapter
+        val adapter = HowAdapter(mainactivity.pasarStayCompanies())
+        binding.recyclerstay.adapter = adapter
 
         //PARA O DE BUSCAR
-        binding.planeFilter.addTextChangedListener(object : TextWatcher {
+        binding.stayFilter.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 //Non fai nada
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                val filteredPlane = mainactivity.planeCompanies.filter { company ->
+                val filteredStay = mainactivity.stayCompanies.filter { company ->
                     company.name.contains(s.toString(), ignoreCase = true)
                 }
-                adapter.updateCompanies(filteredPlane)
+                adapter.updateCompanies(filteredStay)
 
 
             }

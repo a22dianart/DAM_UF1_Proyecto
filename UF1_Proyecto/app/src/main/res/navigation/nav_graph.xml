@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/stayFragment"
-        android:name="com.example.uf1_proyecto.StayFragment"
+        android:name="com.example.uf1_proyecto.how.StayFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_stay" />
     <fragment
@@ -43,7 +43,7 @@
         tools:layout="@layout/fragment_boat" />
     <fragment
         android:id="@+id/busFragment"
-        android:name="com.example.uf1_proyecto.BusFragment"
+        android:name="com.example.uf1_proyecto.how.BusFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_bus" />
     <fragment
