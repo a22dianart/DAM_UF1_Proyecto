@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.uf1_proyecto.MainActivity
 import com.example.uf1_proyecto.databinding.FragmentCountriesBinding
 
 
@@ -28,7 +29,8 @@ class CountriesFragment : Fragment() {
         val view = binding.root
 
         binding.recyclercountries.layoutManager = LinearLayoutManager(requireContext())
-        val adapter = CountryAdapter(CountryProvider.countries)
+        val mainactivity = requireActivity() as MainActivity
+        val adapter = CountryAdapter(mainactivity.pasarPaises())
         binding.recyclercountries.adapter = adapter
 
         //PARA O DE BUSCAR
@@ -38,7 +40,7 @@ class CountriesFragment : Fragment() {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                val filteredCountries = CountryProvider.countries.filter { country ->
+                val filteredCountries = mainactivity.countries.filter { country ->
                     country.name.contains(s.toString(), ignoreCase = true)
                 }
                 adapter.updateCountries(filteredCountries)

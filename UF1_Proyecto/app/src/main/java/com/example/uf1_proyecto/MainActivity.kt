@@ -12,11 +12,13 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.uf1_proyecto.databinding.ActivityMainBinding
 import com.example.uf1_proyecto.how.Company
 import com.example.uf1_proyecto.where.cities.City
+import com.example.uf1_proyecto.where.countries.Country
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     public lateinit var cities : List<City>
+    public lateinit var countries : List<Country>
     public lateinit var planeCompanies: List<Company>
     public lateinit var trainCompanies: List<Company>
     public lateinit var busCompanies: List<Company>
@@ -111,6 +113,45 @@ class MainActivity : AppCompatActivity() {
             this.cities= cities
             return cities
         }
+
+    fun pasarPaises(): List<Country> {
+        val countries = listOf<Country>(
+            Country(
+                getString(R.string.Albania),
+                "https://img2.rtve.es/i/?w=1600&i=1637232083339.jpg",
+                getString(R.string.albania_description),
+                listOf(
+                    getString(R.string.albania_activities1),
+                    getString(R.string.albania_activities2),
+                    getString(R.string.albania_activities3),
+                    getString(R.string.albania_activities4),
+                    getString(R.string.albania_activities5),
+                    getString(R.string.albania_activities6)
+                ),
+                listOf(
+                    getString(R.string.albania_places1),
+                    getString(R.string.albania_places2),
+                    getString(R.string.albania_places3),
+                    getString(R.string.albania_places4),
+                    getString(R.string.albania_places5),
+                    getString(R.string.albania_places6)
+                ),
+                listOf(
+                    getString(R.string.albania_typical1),
+                    getString(R.string.albania_typical2),
+                    getString(R.string.albania_typical3),
+                    getString(R.string.albania_typical4)
+                    ),
+                getString(R.string.albania_languages)
+            )
+
+        )
+
+
+
+        this.countries= countries
+        return countries
+    }
     fun pasarPlaneCompanies(): List<Company>{
 
         val planeCompanies = listOf<Company>(

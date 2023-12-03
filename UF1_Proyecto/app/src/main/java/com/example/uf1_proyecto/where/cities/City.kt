@@ -11,7 +11,3 @@ data class City(
     val typical: List<String>,
     val languages: String
 )
-
-
-
-

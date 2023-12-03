@@ -1,3 +1,5 @@
+
+
 <resources>
     <string name="app_name">EverHorizon</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -42,11 +44,12 @@
 
 
 
+    <!--CITIES-->
     <!--Amman-->
     <string name="Amman">Amman</string>
     <string name="amman_best">Spring</string>
     <string name="amman_country">Jordan</string>
-    <string name="amman_description">Amman, the vibrant capital of Jordan, seamlessly fuses the old and the new, creating a cityscape that unfolds across seven hills. Its skyline, adorned with a mix of contemporary structures and historical landmarks, paints a picture of an evolving metropolis. As you navigate its bustling streets, Amman welcomes with an atmosphere shaped by rich cultural nuances and the warmth of its people. The city\'s charm lies in the fusion of traditional markets with modern urban life, creating a dynamic setting where ancient history meets a burgeoning cosmopolitan identity. Amman invites exploration, offering a captivating narrative through its streets, neighborhoods, and the distinctive character of its urban landscape.</string>
+    <string name="amman_description">Amman, the vibrant capital of Jordan, seamlessly fuses the old and the new, creating a cityscape that unfolds across seven hills. Its skyline, adorned with a mix of contemporary structures and historical landmarks, paints a picture of an evolving metropolis. As you navigate its bustling streets, Amman welcomes with an atmosphere shaped by rich cultural nuances and the warmth of its people. The city%apos;s charm lies in the fusion of traditional markets with modern urban life, creating a dynamic setting where ancient history meets a burgeoning cosmopolitan identity. Amman invites exploration, offering a captivating narrative through its streets, neighborhoods, and the distinctive character of its urban landscape.</string>
     <string name="amman_activities1">Explore the Amman Citadel</string>
     <string name="amman_activities2">Tour the Roman Theater</string>
     <string name="amman_activities3">Stroll along Rainbow Street</string>
@@ -64,5 +67,29 @@
     <string name="amman_typical3">Kebab</string>
     <string name="amman_typical4">Kunafa</string>
     <string name="amman_languages">Arabic, English</string>
+
+
+    <!--COUNTRIES -->
+    <!--Albania -->
+    <string name="Albania">Albania</string>
+    <string name="albania_description">Albania, a hidden gem in the heart of the Balkans, unveils a tapestry of natural beauty and cultural richness. Nestled between mountains and the Adriatic Sea, its landscapes range from pristine beaches to rugged peaks, creating a diverse canvas for exploration. As you immerse yourself in Albania\'s allure, you\'ll encounter a blend of ancient history and modern vitality. The warmth of the Albanian people and the authenticity of its traditions add a unique charm to the experience. From historic sites to vibrant markets, Albania invites you to discover the layers of its fascinating narrative.</string>
+    <string name ="albania_activities1">Explore Gjirokastër Castle</string>
+    <string name="albania_activities2">Visit Butrint National Park</string>
+    <string name="albania_activities3">Relax on Dhërmi Beach</string>
+    <string name="albania_activities4">Discover the Llogara Pass</string>
+    <string name="albania_activities5">Wander in Berat\'s Old Town</string>
+    <string name="albania_activities6">Hike the Theth Valley</string>
+    <string name="albania_places1">Gjirokastër Castle</string>
+    <string name="albania_places2">Butrint National Park</string>
+    <string name="albania_places3">Dhërmi Beach</string>
+    <string name="albania_places4">Llogara Pass</string>
+    <string name="albania_places5">Berat\'s Old Town</string>
+    <string name="albania_places6">Theth Valley</string>
+    <string name="albania_typical1">Tavë Kosi</string>
+    <string name="albania_typical2">Byrek</string>
+    <string name="albania_typical3">Qofte</string>
+    <string name="albania_typical4">Baklava</string>
+    <string name="albania_languages">Albanian</string>
+
 
 </resources>
