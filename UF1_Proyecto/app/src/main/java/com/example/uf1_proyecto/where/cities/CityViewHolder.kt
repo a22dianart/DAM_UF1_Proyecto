@@ -1,20 +1,14 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.where.cities
 
 
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
-import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.uf1_proyecto.databinding.ItemCityBinding
-import com.example.uf1_proyecto.SelectedCityFragment
 import com.example.uf1_proyecto.R
-
-
+import com.example.uf1_proyecto.databinding.ItemCityBinding
+import com.example.uf1_proyecto.where.cities.City
 
 
 class CityViewHolder(view:View): RecyclerView.ViewHolder(view){

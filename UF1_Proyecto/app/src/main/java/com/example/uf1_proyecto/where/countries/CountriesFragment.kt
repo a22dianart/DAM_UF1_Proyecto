@@ -1,4 +1,4 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.where.countries
 
 import android.os.Bundle
 import android.text.Editable

@@ -1,11 +1,9 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.calendar
 
 import android.view.View
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.uf1_proyecto.databinding.ItemBestBinding
-import com.example.uf1_proyecto.databinding.ItemCityBinding
+import com.example.uf1_proyecto.where.cities.City
 
 class CityBestViewHolder(view: View): RecyclerView.ViewHolder(view){
 

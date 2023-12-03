@@ -1,4 +1,4 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.where.cities
 
 data class City(
     val name: String,

@@ -1,4 +1,6 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.where.countries
+
+import com.example.uf1_proyecto.where.countries.Country
 
 /**
  * Clase que vai ter toda a información das cidades que precisaremos mostrar

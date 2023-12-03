@@ -11,6 +11,7 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.example.uf1_proyecto.databinding.ActivityMainBinding
 import com.example.uf1_proyecto.how.Company
+import com.example.uf1_proyecto.where.cities.City
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.where.cities
 
 import android.os.Bundle
 import android.text.Editable
@@ -7,12 +7,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.uf1_proyecto.MainActivity
 import com.example.uf1_proyecto.databinding.FragmentCitiesBinding
 
 
@@ -34,7 +30,7 @@ class CitiesFragment : Fragment() {
         binding.recyclercities.layoutManager = LinearLayoutManager(requireContext())
         //val adapter = CityAdapter(CityProvider.cities)
         val mainactivity = requireActivity() as MainActivity
-        val adapter =CityAdapter(mainactivity.pasarCidades())
+        val adapter = CityAdapter(mainactivity.pasarCidades())
         binding.recyclercities.adapter = adapter
 
         //PARA O DE BUSCAR

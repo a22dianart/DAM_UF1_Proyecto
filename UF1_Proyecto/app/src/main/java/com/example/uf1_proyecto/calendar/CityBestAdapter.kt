@@ -1,4 +1,4 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.calendar
 
 import android.os.Build
 import android.view.LayoutInflater
@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import android.widget.CalendarView
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
+import com.example.uf1_proyecto.R
+import com.example.uf1_proyecto.where.cities.City
 import java.time.LocalDate
-import kotlin.properties.Delegates
 
 
 class CityBestAdapter(private var citiesList:List<City>, private var calendar: CalendarView) : RecyclerView.Adapter<CityBestViewHolder>(){

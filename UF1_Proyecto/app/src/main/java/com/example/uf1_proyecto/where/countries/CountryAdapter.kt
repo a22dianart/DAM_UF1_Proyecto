@@ -1,8 +1,9 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.where.countries
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.uf1_proyecto.R
 
 
 class CountryAdapter(private var countriesList:List<Country>) : RecyclerView.Adapter<CountryViewHolder>(){

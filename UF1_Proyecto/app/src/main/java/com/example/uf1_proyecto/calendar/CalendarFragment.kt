@@ -1,6 +1,5 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.calendar
 
-import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,10 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.uf1_proyecto.MainActivity
 import com.example.uf1_proyecto.databinding.FragmentCalendarBinding
-import com.example.uf1_proyecto.databinding.FragmentCitiesBinding
 import java.time.LocalDate
-import java.util.Locale
 
 
 /**

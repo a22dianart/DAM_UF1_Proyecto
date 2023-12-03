@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/calendarFragment"
-        android:name="com.example.uf1_proyecto.CalendarFragment"
+        android:name="com.example.uf1_proyecto.calendar.CalendarFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_calendar" />
     <fragment
@@ -18,7 +18,7 @@
         tools:layout="@layout/fragment_maps" />
     <fragment
         android:id="@+id/citiesFragment"
-        android:name="com.example.uf1_proyecto.CitiesFragment"
+        android:name="com.example.uf1_proyecto.where.cities.CitiesFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_cities" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/countriesFragment"
-        android:name="com.example.uf1_proyecto.CountriesFragment"
+        android:name="com.example.uf1_proyecto.where.countries.CountriesFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_countries" />
 
@@ -58,7 +58,7 @@
         tools:layout="@layout/fragment_plane" />
     <fragment
         android:id="@+id/selectedCityFragment"
-        android:name="com.example.uf1_proyecto.SelectedCityFragment"
+        android:name="com.example.uf1_proyecto.where.cities.SelectedCityFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_selected_city">
         <argument
@@ -68,7 +68,7 @@
 
     <fragment
         android:id="@+id/selectedCountryFragment"
-        android:name="com.example.uf1_proyecto.SelectedCountryFragment"
+        android:name="com.example.uf1_proyecto.where.countries.SelectedCountryFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_selected_country" />
 
