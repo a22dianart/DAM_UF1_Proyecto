@@ -22,8 +22,6 @@ class CityViewHolder(view:View): RecyclerView.ViewHolder(view){
     val binding = ItemCityBinding.bind(view)
     val view2 = view
 
-    //val nameCity = view.findViewById<TextView>(R.id.cityName)
-    //val imageCity = view.findViewById<ImageView>(R.id.cityImage)
     fun render(cityModel: City){
         binding.cityName.text=cityModel.name
         Glide.with(binding.cityImage.context).load(cityModel.photo).into(binding.cityImage)

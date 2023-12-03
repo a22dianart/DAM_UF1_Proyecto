@@ -38,7 +38,7 @@
         tools:layout="@layout/fragment_stay" />
     <fragment
         android:id="@+id/boatFragment"
-        android:name="com.example.uf1_proyecto.BoatFragment"
+        android:name="com.example.uf1_proyecto.how.BoatFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_boat" />
     <fragment
@@ -53,7 +53,7 @@
         tools:layout="@layout/fragment_info" />
     <fragment
         android:id="@+id/planeFragment"
-        android:name="com.example.uf1_proyecto.PlaneFragment"
+        android:name="com.example.uf1_proyecto.how.PlaneFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_plane" />
     <fragment
@@ -71,14 +71,15 @@
         android:name="com.example.uf1_proyecto.SelectedCountryFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_selected_country" />
-    <fragment
-        android:id="@+id/trainFragment"
-        android:name="com.example.uf1_proyecto.TrainFragment"
-        android:label="@string/app_name"
-        tools:layout="@layout/fragment_train" />
+
     <fragment
         android:id="@+id/tripFragment"
         android:name="com.example.uf1_proyecto.TripFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_trip" />
+    <fragment
+        android:id="@+id/trainFragment"
+        android:name="com.example.uf1_proyecto.how.TrainFragment"
+        android:label="fragment_train"
+        tools:layout="@layout/fragment_train" />
 </navigation>

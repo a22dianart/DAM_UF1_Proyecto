@@ -4,29 +4,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import androidx.navigation.NavHostController
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.uf1_proyecto.databinding.ActivityMainBinding
-import com.google.android.material.appbar.MaterialToolbar
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationView
+import com.example.uf1_proyecto.how.Company
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     public lateinit var cities : List<City>
+    public lateinit var planeCompanies: List<Company>
+    public lateinit var trainCompanies: List<Company>
+    public lateinit var busCompanies: List<Company>
+    public lateinit var boatCompanies: List<Company>
+    public lateinit var stayCompanies: List<Company>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -116,6 +110,75 @@ class MainActivity : AppCompatActivity() {
             this.cities= cities
             return cities
         }
+    fun pasarPlaneCompanies(): List<Company>{
+
+        val planeCompanies = listOf<Company>(
+            Company(
+                "Iberia",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Logotipo_de_Iberia.svg/400px-Logotipo_de_Iberia.svg.png",
+                 "https://www.iberia.com/?language=en&cq_src=google_ads&cq_cmp=224138906&cq_con=12961709546&cq_term=iberia%20airline&cq_med=&cq_plac=&cq_net=g&cq_plt=gp&gad_source=1&gclid=Cj0KCQiA67CrBhC1ARIsACKAa8Sc7EghifporTgBmVDvAH_GAMGmYcgNb457GU7joOamERdxeIT2B4waAgx8EALw_wcB",
+            )
+
+        )
+        this.planeCompanies = planeCompanies
+        return planeCompanies
+
+    }
+
+    fun pasarTrainCompanies(): List<Company>{
+
+        val trainCompanies = listOf<Company>(
+            Company(
+                "Renfe",
+                "https://seeklogo.com/images/R/Renfe-logo-5CB197E185-seeklogo.com.png",
+                "https://www.renfe.com/es/es",
+            )
+
+        )
+        this.trainCompanies = trainCompanies
+        return trainCompanies
+
+    }
+
+    fun pasarBusCompanies(): List<Company>{
+
+        val busCompanies = listOf<Company>(
+            Company(
+                "Monbus",
+                "https://appmonbus.kramagot.com/img/logo/monbus.png",
+                "https://www.monbus.es/es"
+            )
+        )
+        this.busCompanies=busCompanies
+        return busCompanies
+    }
+
+    fun pasarBoatCompanies(): List<Company>{
+
+        val boatCompanies = listOf<Company>(
+            Company(
+                "Direct Ferries",
+                "https://theme.zdassets.com/theme_assets/10427784/920a70a52bf6b26aa43a060a276e3da7f4622c72.png",
+                "https://www.directferries.es"
+            )
+        )
+        this.boatCompanies=boatCompanies
+        return boatCompanies
+    }
+
+    fun pasarStayCompanies(): List<Company>{
+        val stayCompanies = listOf<Company>(
+            Company(
+                "Booking",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png",
+                "https://www.booking.com/?aid=2230195"
+            )
+        )
+        this.stayCompanies=stayCompanies
+        return stayCompanies
+    }
+
+
 
 
 
