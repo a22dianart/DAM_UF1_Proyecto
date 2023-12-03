@@ -1,5 +1,6 @@
 package com.example.uf1_proyecto
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -17,7 +18,8 @@ interface TripDao {
 
     @Delete
     suspend fun delete(trip: Trip)
-    @Query("SELECT * from trip ORDER BY id ASC")
-    fun getItems(): Flow<List<Trip>>
+
+    @Query("SELECT * from trip ORDER BY name ASC")
+    fun getTrips(): Flow<List<Trip>>
 
 }

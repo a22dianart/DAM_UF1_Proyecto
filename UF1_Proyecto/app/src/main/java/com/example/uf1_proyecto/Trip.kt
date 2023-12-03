@@ -9,27 +9,27 @@ data class Trip(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
     @ColumnInfo(name = "name")
-    val itemName: String,
+    val name: String,
     @ColumnInfo(name = "photo")
     val photo: String,
     @ColumnInfo(name = "activities")
-    var activities: List<String>?,
+    var activities: List<String>? =null,
     @ColumnInfo(name = "dayStart")
-    var dayStart: Int?,
+    var dayStart: Int?=null,
     @ColumnInfo(name = "monthStart")
-    var monthStart: Int?,
+    var monthStart: Int?=null,
     @ColumnInfo(name = "yearStart")
-    var yearStart: Int?,
+    var yearStart: Int?=null,
     @ColumnInfo(name = "dayEnd")
-    var dayEnd: Int?,
+    var dayEnd: Int?=null,
     @ColumnInfo(name = "monthEnd")
-    var monthEnd: Int?,
+    var monthEnd: Int?=null,
     @ColumnInfo(name = "yearEnd")
-    var yearEnd: Int?,
+    var yearEnd: Int?=null,
     @ColumnInfo(name = "transport")
-    var transport: String?,
+    var transport: String?=null,
     @ColumnInfo(name = "stay")
-    var stay: String?,
+    var stay: String?=null,
     @ColumnInfo(name = "notes")
-    var notes: String?
+    var notes: String?=null
 )

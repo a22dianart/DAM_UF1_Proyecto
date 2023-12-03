@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.uf1_proyecto.databinding.FragmentSelectedCityBinding
 
@@ -16,6 +17,7 @@ import com.example.uf1_proyecto.databinding.FragmentSelectedCityBinding
 class SelectedCityFragment : Fragment() {
     private var _binding: FragmentSelectedCityBinding? = null
     private val binding get() = _binding!!
+
 
 
     @SuppressLint("SetTextI18n")
@@ -73,6 +75,9 @@ class SelectedCityFragment : Fragment() {
         } else{
             binding.countryAndLanguages.text="It is in $pais and people speak $linguas"
         }
+
+
+
         binding.addButton.setOnClickListener{
             var mensaxe : String
             if (lingua.equals("gl")){
@@ -83,7 +88,14 @@ class SelectedCityFragment : Fragment() {
                mensaxe="$cityName added to My trips"
             }
 
-            //Engadir
+
+            val newTrip = Trip(
+                name = cityName,
+                photo =cidade.photo
+            )
+
+            // Insertar el nuevo Trip utilizando el ViewModel
+
             Toast.makeText(binding.addButton.context, mensaxe, Toast.LENGTH_SHORT).show()
 
         }
