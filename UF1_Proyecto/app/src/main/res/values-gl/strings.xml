@@ -42,6 +42,9 @@
     <!--fragment_trip-->
     <string name="noTrips">Aínda non hai viaxes planificadas. Se queres planificar unha viaxe, selecciona unha ciudade na ventá de cidades ou un país na ventá de países.</string>
 
-
+    <!--filtros-->
+    <string name="searchCity">Busca unha cidade</string>
+    <string name="searchCountry">Busca un país</string>
+    <string name="searchCompany">Search unha compañía</string>
 
 </resources>

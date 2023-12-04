@@ -14,4 +14,8 @@
         <item name="backgroundTint">@color/red</item>
     </style>
     <style name="Theme.UF1_Proyecto" parent="Base.Theme.UF1_Proyecto" />
+
+    <style name="OrangeToolbar" parent="Widget.Material3.Toolbar">
+        <item name="backgroundTint">@color/mainOrange</item>
+    </style>
 </resources>

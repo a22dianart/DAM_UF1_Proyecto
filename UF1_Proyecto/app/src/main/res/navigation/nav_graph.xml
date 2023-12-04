@@ -29,7 +29,11 @@
         android:id="@+id/countriesFragment"
         android:name="com.example.uf1_proyecto.where.countries.CountriesFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_countries" />
+        tools:layout="@layout/fragment_countries">
+        <action
+            android:id="@+id/action_countriesFragment_to_selectedCountryFragment"
+            app:destination="@id/selectedCountryFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/stayFragment"
@@ -70,7 +74,11 @@
         android:id="@+id/selectedCountryFragment"
         android:name="com.example.uf1_proyecto.where.countries.SelectedCountryFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_selected_country" />
+        tools:layout="@layout/fragment_selected_country">
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
 
     <fragment
         android:id="@+id/tripFragment"

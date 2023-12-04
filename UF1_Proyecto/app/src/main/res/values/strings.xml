@@ -43,6 +43,12 @@
     <string name="noTrips">There are no trips planned yet. If you want to plan a trip, select a city in the cities window or a country in the countries window</string>
 
 
+    <!--filtros-->
+    <string name="searchCity">Search for a city</string>
+    <string name="searchCountry">Search for a country</string>
+    <string name="searchCompany">Search for a company</string>
+
+
 
     <!--CITIES-->
     <!--Amman-->

@@ -13,7 +13,8 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
-            style="@style/Widget.MaterialComponents.Toolbar"
+            style="@style/OrangeToolbar"
+
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize" />
 
@@ -45,3 +46,4 @@
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
+<!--    style="@style/Widget.MaterialComponents.Toolbar"-->

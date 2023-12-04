@@ -316,7 +316,7 @@ Santiago de Compostela como exemplo
         android:layout_height="wrap_content"
         android:id="@+id/addButton"
         android:layout_margin="30dp"
-        android:src="@android:drawable/ic_input_add"
+        android:src="@drawable/add_icon"
         android:layout_gravity="top"
         app:layout_anchor="@id/collapsing_toolbar"
         style="@style/GreenFloatingActionButton"

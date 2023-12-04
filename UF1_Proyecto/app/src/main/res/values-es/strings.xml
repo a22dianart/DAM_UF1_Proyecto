@@ -42,6 +42,10 @@
     <!--fragment_trip-->
     <string name="noTrips">No hay viajes planificados aún. Si deseas planificar un viaje, selecciona una ciudad en la ventana de ciudades o un país en la ventana de países.</string>
 
+    <!--filtros-->
+    <string name="searchCity">Busca una ciudad</string>
+    <string name="searchCountry">Busca un país</string>
+    <string name="searchCompany">Busca una compañía</string>
 
 
 </resources>
