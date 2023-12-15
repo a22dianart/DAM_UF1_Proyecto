@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.uf1_proyecto.MainActivity
-import com.example.uf1_proyecto.Trip
+import com.example.uf1_proyecto.data.Trip
 import com.example.uf1_proyecto.databinding.FragmentSelectedCityBinding
 
 

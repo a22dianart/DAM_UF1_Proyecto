@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TripFragment">
+    tools:context=".data.TripFragment">
 
     <TextView
         android:id="@+id/noTrips"

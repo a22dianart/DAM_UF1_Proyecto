@@ -1,4 +1,4 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

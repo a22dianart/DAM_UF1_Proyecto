@@ -13,7 +13,7 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
-            style="@style/OrangeToolbar"
+            android:background="@color/mainOrange"
 
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize" />
@@ -31,6 +31,7 @@
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/mainOrange"
             app:menu="@menu/menu_bottombar" />
 
 

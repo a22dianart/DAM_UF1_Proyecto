@@ -1,6 +1,5 @@
-package com.example.uf1_proyecto
+package com.example.uf1_proyecto.data
 
-import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert

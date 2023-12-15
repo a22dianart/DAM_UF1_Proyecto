@@ -62,5 +62,8 @@ plugins {
         implementation("androidx.room:room-ktx:2.6.0")
         implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 
+        implementation ("com.google.android.gms:play-services-maps:17.0.0")
+
+
 
     }

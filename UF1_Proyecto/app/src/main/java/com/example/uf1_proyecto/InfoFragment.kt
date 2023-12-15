@@ -7,6 +7,9 @@
     import android.view.ViewGroup
     import androidx.fragment.app.activityViewModels
     import androidx.lifecycle.lifecycleScope
+    import com.example.uf1_proyecto.data.TripApplication
+    import com.example.uf1_proyecto.data.TripViewModel
+    import com.example.uf1_proyecto.data.TripViewModelFactory
     import com.example.uf1_proyecto.databinding.FragmentInfoBinding
 
     class InfoFragment : Fragment() {
