@@ -82,7 +82,7 @@
 
     <fragment
         android:id="@+id/tripFragment"
-        android:name="com.example.uf1_proyecto.data.TripFragment"
+        android:name="com.example.uf1_proyecto.trip.TripFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_trip" />
     <fragment

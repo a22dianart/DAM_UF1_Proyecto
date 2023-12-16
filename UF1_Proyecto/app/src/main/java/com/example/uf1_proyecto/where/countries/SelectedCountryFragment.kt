@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.uf1_proyecto.MainActivity
-import com.example.uf1_proyecto.data.Trip
+import com.example.uf1_proyecto.trip.Trip
 import com.example.uf1_proyecto.databinding.FragmentSelectedCountryBinding
 
 
@@ -86,11 +86,14 @@ class SelectedCountryFragment : Fragment() {
                 mensaxe="$countryName added to My trips"
             }
 
-
             val newTrip = Trip(
+                id= mainactivity.tripList.size+1,
                 name = countryName,
-                photo =pais.photo
+                photo =pais.photo,
+                activities = listOf(pais.activities[0], pais.activities[1], pais.activities[2], pais.activities[3],pais.activities[4],pais.activities[5])
+
             )
+            mainactivity.addViaxe(newTrip)
 
             // Insertar el nuevo Trip utilizando el ViewModel
 

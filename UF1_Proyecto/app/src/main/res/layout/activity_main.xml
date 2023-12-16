@@ -29,9 +29,11 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
+            style="@style/MyBottomNavigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/mainOrange"
+            android:layout_gravity="bottom"
+            app:labelVisibilityMode="selected"
             app:menu="@menu/menu_bottombar" />
 
 

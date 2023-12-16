@@ -6,11 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.uf1_proyecto.R
+import com.example.uf1_proyecto.where.cities.CityAdapter
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.CameraPosition
 
 class MapsFragment : Fragment() {
 
@@ -44,14 +46,29 @@ class MapsFragment : Fragment() {
         // Ejemplo: Mover la cámara a una ubicación específica y agregar un marcador
 
         // Mover la cámara a una ubicación específica (por ejemplo, latitud y longitud de un lugar)
-        val ubicacion = LatLng(37.7749, -122.4194) // Latitud y longitud de San Francisco, CA
-        val ubicacionSantiago = LatLng(42.8805200,-8.5456900, ) //Ubicacion para santiago de compostela
-//        val ubicacionActual = LatLng()
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ubicacionSantiago, 12f)) // Zoom de 12
+        val ubicacion= LatLng(30.3995242, 10.3995242) //ubicacion inicials
+
+        // Configurar la cámara con una rotación de 0 grados
+        val cameraPosition = CameraPosition.Builder()
+            .target(ubicacion)
+            .zoom(1f)
+            .bearing(0f) // Rotación de la cámara en grados (0 significa sin rotación)
+            .tilt(0f) // Inclinación de la cámara en grados (0 significa sin inclinación)
+            .build()
+
+        // Mover la cámara a la posición configurada
+        googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
 
         // Agregar un marcador en la ubicación
-        googleMap.addMarker(MarkerOptions().position(ubicacionSantiago).title("Santiago"))
+        val mainactivity = requireActivity() as MainActivity
+        val cities =mainactivity.pasarCidades()
+        var ubicationCity= LatLng(0.0, 0.0)
+        for(city in cities){
+            ubicationCity=LatLng(city.latitude, city.longitude)
+            googleMap.addMarker(MarkerOptions().position(ubicationCity).title(city.name))
+        }
     }
+
 
 
 }

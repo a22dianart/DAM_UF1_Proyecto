@@ -11,6 +11,7 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.example.uf1_proyecto.databinding.ActivityMainBinding
 import com.example.uf1_proyecto.how.Company
+import com.example.uf1_proyecto.trip.Trip
 import com.example.uf1_proyecto.where.cities.City
 import com.example.uf1_proyecto.where.countries.Country
 
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     public lateinit var busCompanies: List<Company>
     public lateinit var boatCompanies: List<Company>
     public lateinit var stayCompanies: List<Company>
+    public lateinit var tripList: MutableList<Trip>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,6 +55,11 @@ class MainActivity : AppCompatActivity() {
         )
         builder.build()
 
+        //cambiando o estilo do bottom navigation
+        binding.bottomNavigation.itemIconSize=80
+
+        //lista
+        tripList= mutableListOf()
 
 
         //asociamos un grafo a todas as partes
@@ -102,7 +109,11 @@ class MainActivity : AppCompatActivity() {
                         getString(R.string.amman_typical3),
                         getString(R.string.amman_typical4)
                     ),
-                    getString(R.string.amman_languages)
+                    getString(R.string.amman_languages),
+                    31.8359454,
+                    35.7824803
+
+
                 )
 
             )
@@ -209,7 +220,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun pasarStayCompanies(): List<Company>{
-        val stayCompanies = listOf<Company>(
+        val stayCompanies = listOf(
             Company(
                 "Booking",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png",
@@ -219,6 +230,48 @@ class MainActivity : AppCompatActivity() {
         this.stayCompanies=stayCompanies
         return stayCompanies
     }
+
+
+        fun tripName(): String {
+
+            val configuration = resources.configuration
+            val lingua = configuration.locales[0].language
+            var tripName: String
+            if (lingua.equals("gl")) {
+                tripName = "Viaxe a "
+            } else if (lingua.equals("es")) {
+                tripName = "Viaje a "
+            } else {
+                tripName = "Trip to "
+            }
+            return tripName
+
+        }
+
+    fun pasarViaxes(): List<Trip>{
+//        val tripList = listOf(
+//            Trip(
+//                id = 1,
+//                name = "Paris",
+//                photo = "https://png.pngtree.com/background/20230612/original/pngtree-wolf-animals-images-wallpaper-for-pc-384x480-picture-image_3180467.jpg",
+//                activities = listOf("Visit Eiffel Tower", "Louvre Museum", "Cruise on Seine River", "4", "5", "6")
+//            ),
+//            Trip(
+//                id = 2,
+//                name = "Beach Vacation",
+//                photo = "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
+//                activities = listOf("algo"," algo2", "algo3", "algo4", "algo5", "algo6")
+//            )
+//        )
+        return this.tripList
+
+    }
+    fun addViaxe(trip: Trip){
+        this.tripList.add(trip)
+
+    }
+
+
 
 
 

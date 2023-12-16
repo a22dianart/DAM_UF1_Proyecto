@@ -9,6 +9,7 @@ import com.example.uf1_proyecto.R
 class CityAdapter(private var citiesList:List<City>) : RecyclerView.Adapter<CityViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CityViewHolder {
+
         val layoutInflater = LayoutInflater.from(parent.context)
         return CityViewHolder(layoutInflater.inflate(R.layout.item_city,parent,false));
     }

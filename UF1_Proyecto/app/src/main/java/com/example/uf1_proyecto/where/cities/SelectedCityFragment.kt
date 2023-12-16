@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.uf1_proyecto.MainActivity
-import com.example.uf1_proyecto.data.Trip
+import com.example.uf1_proyecto.trip.Trip
 import com.example.uf1_proyecto.databinding.FragmentSelectedCityBinding
 
 
@@ -89,11 +89,15 @@ class SelectedCityFragment : Fragment() {
 
 
             val newTrip = Trip(
+                id= mainactivity.tripList.size+1,
                 name = cityName,
-                photo =cidade.photo
-            )
+                photo =cidade.photo,
+                activities = listOf(cidade.activities[0], cidade.activities[1], cidade.activities[2], cidade.activities[3],cidade.activities[4],cidade.activities[5])
 
+            )
+            mainactivity.addViaxe(newTrip)
             // Insertar el nuevo Trip utilizando el ViewModel
+
 
             Toast.makeText(binding.addButton.context, mensaxe, Toast.LENGTH_SHORT).show()
 

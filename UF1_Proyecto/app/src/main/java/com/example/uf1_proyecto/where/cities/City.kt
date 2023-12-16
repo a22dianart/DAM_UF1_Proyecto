@@ -9,5 +9,7 @@ data class City(
     val activities: List<String>,
     val places: List<String>,
     val typical: List<String>,
-    val languages: String
+    val languages: String,
+    val latitude: Double,
+    val longitude: Double
 )

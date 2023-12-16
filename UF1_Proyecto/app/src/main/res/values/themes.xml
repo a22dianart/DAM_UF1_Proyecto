@@ -18,4 +18,12 @@
     <style name="OrangeToolbar" parent="Widget.Material3.Toolbar">
         <item name="backgroundTint">@color/mainOrange</item>
     </style>
+
+    <style name="MyBottomNavigation" >
+        <item name="android:background">@color/mainOrange</item>
+        <item name="itemBackground">@color/bottom_navigation_bg</item>
+        <item name="itemIconTint">@color/bottom_navigation_selector</item>
+        <item name="itemTextColor">@color/bottom_navigation_selector</item>
+    </style>
+
 </resources>
