@@ -88,6 +88,6 @@
     <fragment
         android:id="@+id/trainFragment"
         android:name="com.example.uf1_proyecto.how.TrainFragment"
-        android:label="fragment_train"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_train" />
 </navigation>

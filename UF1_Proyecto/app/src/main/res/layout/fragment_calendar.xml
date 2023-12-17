@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".calendar.CalendarFragment"
+    android:background="@color/darkBlue"
     android:orientation="vertical">
 
 
@@ -16,18 +17,15 @@
         android:fontFamily="sans-serif-black"
         android:textSize="15dp"
         android:textColor="@color/white"
-        android:background="@color/darkBlue"
         android:padding="10dp" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="@color/black" />
+
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@color/white"
         android:firstDayOfWeek="@string/calendarFirstDay" />
 
     <View
@@ -50,8 +48,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerbetterplaces"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/darkBlue"/>
+        android:layout_height="wrap_content" />
 
 
 

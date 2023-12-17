@@ -89,22 +89,6 @@ class SelectedCityFragment : Fragment() {
             } else{
                mensaxe="$cityName added to My trips"
             }
-//
-//
-//            //engadimos a viaxe no noso Array
-//            var numTrip = mainactivity.tripList.size + 1
-//            val newTrip = Trip(
-//                id= numTrip,
-//                name = cityName,
-//                photo =cidade.photo,
-//                activities = listOf(cidade.activities[0], cidade.activities[1], cidade.activities[2], cidade.activities[3],cidade.activities[4],cidade.activities[5])
-//
-//            )
-//            mainactivity.addViaxe(newTrip)
-
-            //engadimos a viaxe en Shared Preferences
-
-            //val sharedPreferences = mainactivity.getPreferences(Context.MODE_PRIVATE)
             val sharedPreferences=MainActivity.sharedPreferences!!
             val editor = sharedPreferences.edit()
 

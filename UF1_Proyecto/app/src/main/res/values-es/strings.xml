@@ -47,5 +47,311 @@
     <string name="searchCountry">Busca un país</string>
     <string name="searchCompany">Busca una compañía</string>
 
+    <!--CIUDADES-->
+    <!--Amán-->
+    <string name="Amman">Amán</string>
+    <string name="amman_photo">https://i0.wp.com/passporterapp.com/es/blog/wp-content/uploads/2023/06/que-ver-en-amman.jpg?fit=1280%2C719&amp;ssl=1</string>
+    <string name="amman_best">Winter</string>
+    <string name="amman_country">Jordania</string>
+    <string name="amman_description">Amán, la vibrante capital de Jordania, fusiona de manera perfecta lo antiguo y lo nuevo, creando un paisaje urbano que se despliega a lo largo de siete colinas. Su horizonte, adornado con una mezcla de estructuras contemporáneas y puntos de referencia históricos, pinta un cuadro de una metrópoli en constante evolución. Mientras navegas por sus bulliciosas calles, Amán te da la bienvenida con una atmósfera moldeada por ricas sutilezas culturales y la calidez de su gente. El encanto de la ciudad radica en la fusión de mercados tradicionales con la vida urbana moderna, creando un entorno dinámico donde la historia antigua se encuentra con una identidad cosmopolita en crecimiento. Amán invita a la exploración, ofreciendo una narrativa cautivadora a través de sus calles, barrios y el distintivo carácter de su paisaje urbano.</string>
+    <string name="amman_activities1">Explora la Ciudadela de Amán</string>
+    <string name="amman_activities2">Recorre el Teatro Romano</string>
+    <string name="amman_activities3">Pasea por Rainbow Street</string>
+    <string name="amman_activities4">Visita el Museo Arqueológico de Jordania</string>
+    <string name="amman_activities5">Experimenta el Mercado Al-Balad</string>
+    <string name="amman_activities6">Recorre el Centro de Amán</string>
+    <string name="amman_places1">Ciudadela de Amán</string>
+    <string name="amman_places2">Teatro Romano</string>
+    <string name="amman_places3">Calle del Arco Iris</string>
+    <string name="amman_places4">Museo Arqueológico de Jordania</string>
+    <string name="amman_places5">Mezquita del Rey Hussein</string>
+    <string name="amman_places6">Mercado Al-Balad</string>
+    <string name="amman_typical1">Mansaf</string>
+    <string name="amman_typical2">Falafel</string>
+    <string name="amman_typical3">Kebab</string>
+    <string name="amman_typical4">Kunafa</string>
+    <string name="amman_languages">Árabe e Inglés</string>
+    <string name="amman_latitude">31.9516</string>
+    <string name="amman_longitude">35.9235</string>
+
+    <!--Madrid-->
+    <string name="Madrid">Madrid</string>
+    <string name="madrid_photo">https://hips.hearstapps.com/hmg-prod/images/madrid-03-1537270899.jpg</string>
+    <string name="madrid_best">Autumn</string>
+    <string name="madrid_country">España</string>
+    <string name="madrid_description">Madrid, la vibrante capital de España, fusiona de manera perfecta lo antiguo y lo nuevo, creando un paisaje urbano que se despliega a través de sus múltiples barrios. Su skyline, adornado con una mezcla de estructuras contemporáneas y puntos de referencia históricos, pinta un cuadro de una metrópoli vibrante y diversa. Al recorrer sus bulliciosas calles, Madrid te da la bienvenida con una atmósfera influenciada por ricas tradiciones culturales y la calidez de su gente. El encanto de la ciudad radica en la combinación de mercados tradicionales con la vida urbana moderna, creando un entorno dinámico donde la historia antigua se encuentra con una identidad cosmopolita en constante evolución. Madrid invita a la exploración, ofreciendo una narrativa cautivadora a través de sus calles, barrios y el carácter distintivo de su paisaje urbano.</string>
+    <string name="madrid_activities1">Visita el Museo del Prado</string>
+    <string name="madrid_activities2">Explora el Parque del Retiro</string>
+    <string name="madrid_activities3">Recorre la Gran Vía</string>
+    <string name="madrid_activities4">Descubre el Palacio Real</string>
+    <string name="madrid_activities5">Disfruta de la vida nocturna en Chueca</string>
+    <string name="madrid_activities6">Pasea por el Barrio de Malasaña</string>
+    <string name="madrid_places1">Museo del Prado</string>
+    <string name="madrid_places2">Parque del Retiro</string>
+    <string name="madrid_places3">Gran Vía</string>
+    <string name="madrid_places4">Palacio Real</string>
+    <string name="madrid_places5">Plaza Mayor</string>
+    <string name="madrid_places6">Barrio de Salamanca</string>
+    <string name="madrid_typical1">Bocadillo de Calamares</string>
+    <string name="madrid_typical2">Tortilla Española</string>
+    <string name="madrid_typical3">Churros con Chocolate</string>
+    <string name="madrid_typical4">Cocido Madrileño</string>
+    <string name="madrid_languages">Español e Inglés</string>
+    <string name="madrid_latitude">40.4168</string>
+    <string name="madrid_longitude">-3.7038</string>
+
+
+    <!--Nueva York-->
+    <string name="NewYork">Nueva York</string>
+    <string name="newyork_photo">https://media.admagazine.com/photos/61e5acc706c10ae95c71b902/master/pass/New-York-skyline.jpg</string>
+    <string name="newyork_best">Winter</string>
+    <string name="newyork_country">Estados Unidos</string>
+    <string name="newyork_description">Nueva York, la bulliciosa metrópoli de los Estados Unidos, es un testimonio de la armoniosa fusión entre lo antiguo y lo moderno. Su icónico horizonte, adornado con una mezcla de rascacielos contemporáneos y monumentos históricos, cuenta la historia de una ciudad que nunca duerme. Al recorrer las animadas calles de Nueva York, te envolverá una atmósfera moldeada por diversas culturas y la energía de sus habitantes. El atractivo de la ciudad radica en la fusión de vecindarios tradicionales con el pulso de la vida urbana moderna, creando un tapiz dinámico donde la historia y la innovación se cruzan. Nueva York invita a la exploración, tejiendo una narrativa a través de sus icónicas calles, diversos barrios y el carácter único de su paisaje urbano.</string>
+    <string name="newyork_activities1">Visita Times Square</string>
+    <string name="newyork_activities2">Explora Central Park</string>
+    <string name="newyork_activities3">Cruza el Puente de Brooklyn</string>
+    <string name="newyork_activities4">Descubre el Museo Metropolitano de Arte</string>
+    <string name="newyork_activities5">Disfruta de los espectáculos de Broadway</string>
+    <string name="newyork_activities6">Pasea por Greenwich Village</string>
+    <string name="newyork_places1">Times Square</string>
+    <string name="newyork_places2">Central Park</string>
+    <string name="newyork_places3">Puente de Brooklyn</string>
+    <string name="newyork_places4">Museo Metropolitano de Arte</string>
+    <string name="newyork_places5">Broadway</string>
+    <string name="newyork_places6">Greenwich Village</string>
+    <string name="newyork_typical1">Pizza al estilo de Nueva York</string>
+    <string name="newyork_typical2">Bagels con Salmón</string>
+    <string name="newyork_typical3">Tarta de Queso</string>
+    <string name="newyork_typical4">Hot Dogs</string>
+    <string name="newyork_languages">Inglés</string>
+    <string name="newyork_latitude">40.7128</string>
+    <string name="newyork_longitude">-74.0060</string>
+
+    <!--Tokio-->
+    <string name="Tokyo">Tokio</string>
+    <string name="tokyo_photo">https://www.gotokyo.org/es/destinations/southern-tokyo/images/499_0354_2.jpg</string>
+    <string name="tokyo_best">Spring</string>
+    <string name="tokyo_country">Japón</string>
+    <string name="tokyo_description">Tokio, la dinámica capital de Japón, cautiva a los visitantes con su perfecta fusión de tradición y modernidad. El horizonte de la ciudad, adornado con una mezcla de arquitectura de vanguardia y monumentos históricos, despliega una narrativa de una metrópoli que evoluciona constantemente. Navegando por las vibrantes calles de Tokio, te encontrarás con un rico tapiz cultural influenciado por tradiciones centenarias y el pulso enérgico de la vida contemporánea. El encanto de la ciudad radica en la coexistencia de antiguos templos y bulliciosos distritos iluminados por neón, creando una atmósfera emocionante donde el pasado y el futuro se cruzan. Tokio invita a la exploración, ofreciendo un viaje cautivador a través de sus diversos barrios, lugares icónicos y el carácter único de su paisaje urbano.</string>
+    <string name="tokyo_activities1">Visita el Templo Senso-ji</string>
+    <string name="tokyo_activities2">Explora el cruce de Shibuya</string>
+    <string name="tokyo_activities3">Experimenta el Mercado de Pescado de Tsukiji</string>
+    <string name="tokyo_activities4">Descubre el Santuario Meiji</string>
+    <string name="tokyo_activities5">Disfruta de las compras en Harajuku</string>
+    <string name="tokyo_activities6">Pasea por el Parque Ueno</string>
+    <string name="tokyo_places1">Templo Senso-ji</string>
+    <string name="tokyo_places2">Cruce de Shibuya</string>
+    <string name="tokyo_places3">Mercado de Pescado de Tsukiji</string>
+    <string name="tokyo_places4">Santuario Meiji</string>
+    <string name="tokyo_places5">Harajuku</string>
+    <string name="tokyo_places6">Parque Ueno</string>
+    <string name="tokyo_typical1">Sushi y Sashimi</string>
+    <string name="tokyo_typical2">Ramen</string>
+    <string name="tokyo_typical3">Delicias con sabor a Matcha</string>
+    <string name="tokyo_typical4">Tempura</string>
+    <string name="tokyo_languages">Japonés e Inglés</string>
+    <string name="tokyo_latitude">35.6895</string>
+    <string name="tokyo_longitude">139.6917</string>
+
+    <!--Londres-->
+    <string name="London">Londres</string>
+    <string name="london_photo">https://www.thesun.co.uk/wp-content/uploads/2023/01/houses-parliament-big-ben-double-780545902.jpg</string>
+    <string name="london_best">Summer</string>
+    <string name="london_country">Reino Unido</string>
+    <string name="london_description">Londres, la vibrante capital del Reino Unido, cautiva a los visitantes con su atemporal fusión de historia y modernidad. El horizonte de la ciudad, adornado con una mezcla de hitos históricos y estructuras contemporáneas, despliega una narrativa de una metrópoli que ha desempeñado un papel central en la configuración del curso de la historia. Al explorar las bulliciosas calles de Londres, te sumergirás en una rica tapestry cultural influenciada por tradiciones centenarias y el pulso de la vida contemporánea. El encanto de la ciudad radica en sus diversos vecindarios, hitos icónicos y el carácter único de su paisaje urbano. Londres invita a la exploración, ofreciendo un viaje cautivador a través de sus sitios históricos, museos de clase mundial y la energía dinámica de su atmósfera cosmopolita.</string>
+    <string name="london_activities1">Visitar la Torre de Londres</string>
+    <string name="london_activities2">Explorar el Museo Británico</string>
+    <string name="london_activities3">Pasear por Hyde Park</string>
+    <string name="london_activities4">Descubrir el Palacio de Buckingham</string>
+    <string name="london_activities5">Experimentar el West End</string>
+    <string name="london_activities6">Caminar a lo largo del río Támesis</string>
+    <string name="london_places1">Torre de Londres</string>
+    <string name="london_places2">Museo Británico</string>
+    <string name="london_places3">Hyde Park</string>
+    <string name="london_places4">Palacio de Buckingham</string>
+    <string name="london_places5">West End</string>
+    <string name="london_places6">Río Támesis</string>
+    <string name="london_typical1">Fish and Chips</string>
+    <string name="london_typical2">Merienda con té</string>
+    <string name="london_typical3">Desayuno inglés</string>
+    <string name="london_typical4">Pastel de pastor</string>
+    <string name="london_languages">Inglés</string>
+    <string name="london_latitude">51.5099</string>
+    <string name="london_longitude">-0.1180</string>
+
+
+    <!--El Cairo-->
+    <string name="Cairo">El Cairo</string>
+    <string name="cairo_photo">https://www.timeoutriyadh.com/cloud/timeoutriyadh/2021/07/11/Cairo_1.jpg</string>
+    <string name="cairo_best">Winter</string>
+    <string name="cairo_country">Egipto</string>
+    <string name="cairo_description">El Cairo, la vibrante capital de Egipto, es un testimonio vivo de la rica historia del país y de las influencias modernas. El horizonte de la ciudad, adornado con maravillas antiguas como las Pirámides de Giza y estructuras contemporáneas, cuenta una historia cautivadora de una metrópoli que ha resistido la prueba del tiempo. Al navegar por las bulliciosas calles de El Cairo, te sumergirás en una tela cultural moldeada por tradiciones milenarias y el espíritu vibrante de su gente. El encanto de la ciudad radica en la yuxtaposición de hitos históricos con la energía de la vida urbana moderna, creando una atmósfera dinámica donde el pasado y el presente coexisten. El Cairo invita a la exploración, ofreciendo un viaje a través de sus sitios icónicos, diversos vecindarios y el carácter único de su paisaje urbano.</string>
+    <string name="cairo_activities1">Explora las Pirámides de Giza</string>
+    <string name="cairo_activities2">Visita el Museo Egipcio</string>
+    <string name="cairo_activities3">Pasea por el Mercado Khan El Khalili</string>
+    <string name="cairo_activities4">Descubre la Ciudadela de Saladino</string>
+    <string name="cairo_activities5">Navega por el río Nilo</string>
+    <string name="cairo_activities6">Experimenta el Cairo Antiguo</string>
+    <string name="cairo_places1">Pirámides de Giza</string>
+    <string name="cairo_places2">Museo Egipcio</string>
+    <string name="cairo_places3">Mercado Khan El Khalili</string>
+    <string name="cairo_places4">Ciudadela de Saladino</string>
+    <string name="cairo_places5">Río Nilo</string>
+    <string name="cairo_places6">Cairo Antiguo</string>
+    <string name="cairo_typical1">Koshary</string>
+    <string name="cairo_typical2">Falafel</string>
+    <string name="cairo_typical3">Té Egipcio</string>
+    <string name="cairo_typical4">Shawarma</string>
+    <string name="cairo_languages">Árabe e Inglés</string>
+    <string name="cairo_latitude">30.0330</string>
+    <string name="cairo_longitude">31.2357</string>
+
+    <!-- Sydney -->
+    <string name="Sydney">Sídney</string>
+    <string name="sydney_photo">https://www.viajarsydney.com/img/que-visitar-sydney.jpg</string>
+    <string name="sydney_best">Summer</string>
+    <string name="sydney_country">Australia</string>
+    <string name="sydney_description">Sídney, la impresionante capital de Australia, es una ciudad de belleza cautivadora y atractivo moderno. Con su icónica Ópera de Sídney y el Puente de la Bahía de Sídney, el paisaje urbano es una mezcla de maravillas arquitectónicas frente al telón de fondo del puerto centelleante. Sídney ofrece una experiencia cultural diversa, desde la animada escena artística hasta el relajado estilo de vida costero. Explora las playas de arena, disfruta de un paseo en ferry por el puerto y sumérgete en la atmosfera dinámica de esta metrópoli cosmopolita.</string>
+    <string name="sydney_activities1">Visita la Ópera de Sídney</string>
+    <string name="sydney_activities2">Sube al Puente de la Bahía de Sídney</string>
+    <string name="sydney_activities3">Relájate en Bondi Beach</string>
+    <string name="sydney_activities4">Explora el Real Jardín Botánico</string>
+    <string name="sydney_activities5">Toma un ferry a Manly</string>
+    <string name="sydney_activities6">Descubre The Rocks</string>
+    <string name="sydney_places1">Ópera de Sídney</string>
+    <string name="sydney_places2">Puente de la Bahía de Sídney</string>
+    <string name="sydney_places3">Bondi Beach</string>
+    <string name="sydney_places4">Real Jardín Botánico</string>
+    <string name="sydney_places5">Playa Manly</string>
+    <string name="sydney_places6">The Rocks</string>
+    <string name="sydney_typical1">Empanada australiana</string>
+    <string name="sydney_typical2">Pescado y papas fritas</string>
+    <string name="sydney_typical3">Café Flat White</string>
+    <string name="sydney_typical4">Galletas Tim Tam</string>
+    <string name="sydney_languages">Inglés</string>
+    <string name="sydney_latitude">-33.8688</string>
+    <string name="sydney_longitude">151.2093</string>
+
+    <!--París-->
+    <string name="Paris">París</string>
+    <string name="paris_photo">https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg</string>
+    <string name="paris_best">Spring</string>
+    <string name="paris_country">Francia</string>
+    <string name="paris_description">París, la encantadora capital de Francia, es una ciudad de belleza atemporal y riqueza cultural. Con hitos icónicos como la Torre Eiffel y el Museo del Louvre, el paisaje urbano es una obra maestra de arte e historia. París ofrece un ambiente romántico, bulevares encantadores y una cocina de clase mundial. Sumérgete en el legado artístico, pasea por el río Sena y disfruta de la vibrante atmósfera de esta ciudad cosmopolita.</string>
+    <string name="paris_activities1">Visitar la Torre Eiffel</string>
+    <string name="paris_activities2">Explorar el Museo del Louvre</string>
+    <string name="paris_activities3">Pasear por los Campos Elíseos</string>
+    <string name="paris_activities4">Descubrir Montmartre</string>
+    <string name="paris_activities5">Navegar por el río Sena</string>
+    <string name="paris_activities6">Disfrutar de un pastel francés en una cafetería</string>
+    <string name="paris_places1">Torre Eiffel</string>
+    <string name="paris_places2">Museo del Louvre</string>
+    <string name="paris_places3">Campos Elíseos</string>
+    <string name="paris_places4">Montmartre</string>
+    <string name="paris_places5">Río Sena</string>
+    <string name="paris_places6">Catedral de Notre-Dame</string>
+    <string name="paris_typical1">Croissant</string>
+    <string name="paris_typical2">Coq au Vin</string>
+    <string name="paris_typical3">Macarons</string>
+    <string name="paris_typical4">Baguette</string>
+    <string name="paris_languages">Francés</string>
+    <string name="paris_latitude">48.8566</string>
+    <string name="paris_longitude">2.3522</string>
+
+    <!--PAISES-->
+    <!--Albania -->
+    <string name="Albania">Albania</string>
+    <string name="albania_photo">https://viajes.nationalgeographic.com.es/medio/2023/07/10/berat_a65616ee_230710160526_1200x675.jpg</string>
+    <string name="albania_description">Albania, una joya oculta en el corazón de los Balcanes, desvela un tapiz de belleza natural y riqueza cultural. Enclavada entre montañas y el Mar Adriático, sus paisajes van desde playas prístinas hasta picos escarpados, creando un lienzo diverso para la exploración. Mientras te sumerges en el atractivo de Albania, te encontrarás con una mezcla de historia antigua y vitalidad moderna. La calidez de la gente albanesa y la autenticidad de sus tradiciones añaden un encanto único a la experiencia. Desde sitios históricos hasta mercados vibrantes, Albania te invita a descubrir las capas de su fascinante narrativa.</string>
+    <string name ="albania_activities1">Explora el Castillo de Gjirokastër</string>
+    <string name="albania_activities2">Visita el Parque Nacional de Butrint</string>
+    <string name="albania_activities3">Relájate en la Playa de Dhërmi</string>
+    <string name="albania_activities4">Descubre el Paso de Llogara</string>
+    <string name="albania_activities5">Pasea por el Casco Antiguo de Berat</string>
+    <string name="albania_activities6">Haz senderismo en el Valle de Theth</string>
+    <string name="albania_places1">Castillo de Gjirokastër</string>
+    <string name="albania_places2">Parque Nacional de Butrint</string>
+    <string name="albania_places3">Playa de Dhërmi</string>
+    <string name="albania_places4">Paso de Llogara</string>
+    <string name="albania_places5">Casco Antiguo de Berat</string>
+    <string name="albania_places6">Valle de Theth</string>
+    <string name="albania_typical1">Tavë Kosi</string>
+    <string name="albania_typical2">Byrek</string>
+    <string name="albania_typical3">Qofte</string>
+    <string name="albania_typical4">Baklava</string>
+    <string name="albania_languages">Albanés</string>
+
+    <!--España -->
+    <string name="Spain">España</string>
+    <string name="spain_photo">https://estaticos-cdn.prensaiberica.es/clip/956530e0-7347-403b-bc8c-4dfd2068aba1_woman-libre-1200_default_0.jpg</string>
+    <string name="spain_description">España, una joya oculta en el corazón de la Península Ibérica, despliega un tapiz de belleza natural y riqueza cultural. Enmarcada entre montañas y el Mar Mediterráneo, sus paisajes van desde playas doradas hasta picos majestuosos, creando un lienzo diverso para la exploración. Al sumergirte en el atractivo de España, encontrarás una fusión de historia antigua y vitalidad moderna. La calidez de la gente española y la autenticidad de sus tradiciones añaden un encanto único a la experiencia. Desde sitios históricos hasta bulliciosos mercados, España te invita a descubrir las capas de su fascinante narrativa.</string>
+    <string name ="spain_activities1">Explora el Castillo de Alcázar</string>
+    <string name="spain_activities2">Visita el Parque Nacional de Doñana</string>
+    <string name="spain_activities3">Relájate en la Playa de la Concha</string>
+    <string name="spain_activities4">Descubre la Sierra Nevada</string>
+    <string name="spain_activities5">Pasea por el Casco Antiguo de Toledo</string>
+    <string name="spain_activities6">Haz senderismo en los Picos de Europa</string>
+    <string name="spain_places1">Castillo de Alcázar</string>
+    <string name="spain_places2">Parque Nacional de Doñana</string>
+    <string name="spain_places3">Playa de la Concha</string>
+    <string name="spain_places4">Sierra Nevada</string>
+    <string name="spain_places5">Casco Antiguo de Toledo</string>
+    <string name="spain_places6">Picos de Europa</string>
+    <string name="spain_typical1">Paella</string>
+    <string name="spain_typical2">Tortilla Española</string>
+    <string name="spain_typical3">Gambas al Ajillo</string>
+    <string name="spain_typical4">Churros con Chocolate</string>
+    <string name="spain_languages">Español</string>
+
+    <!--Japón -->
+    <string name="Japan">Japón</string>
+    <string name="japan_photo">https://lp-cms-production.imgix.net/2021-10/Mt.%20Fuji%20with%20red%20pagoda%2C%20Fujiyoshida%2C%20Japan%20By%20INIGO%20CIA%20DA%20RIVA%20Stocksy_txp95a12c14B4D300_Medium_2211561.jpg</string>
+    <string name="japan_description">Japón, una tierra de antiguas tradiciones y maravillas modernas, cautiva con su rica mezcla de cultura y belleza natural. Desde los apacibles paisajes de los cerezos en flor hasta los bulliciosos centros urbanos, Japón ofrece un lienzo diverso para la exploración. Sumérgete en el atractivo de Japón, donde templos antiguos coexisten con tecnología de vanguardia. La hospitalidad del pueblo japonés y la meticulosidad de sus tradiciones crean una experiencia verdaderamente encantadora. Ya sea explorando santuarios históricos o deleitándote con la cocina contemporánea, Japón te invita a descubrir las capas de su narrativa cautivadora.</string>
+    <string name="japan_activities1">Visita el Kinkaku-ji de Kyoto</string>
+    <string name="japan_activities2">Experimenta la tranquilidad del Monte Fuji</string>
+    <string name="japan_activities3">Explora las vibrantes calles de Tokio</string>
+    <string name="japan_activities4">Descubre la ciudad histórica de Nara</string>
+    <string name="japan_activities5">Relájate en las aguas termales de Hakone</string>
+    <string name="japan_activities6">Observa la tradicional ceremonia del té</string>
+    <string name="japan_places1">Kinkaku-ji, Kyoto</string>
+    <string name="japan_places2">Monte Fuji</string>
+    <string name="japan_places3">Tokio</string>
+    <string name="japan_places4">Nara</string>
+    <string name="japan_places5">Aguas termales de Hakone</string>
+    <string name="japan_places6">Lugar de la Ceremonia del Té</string>
+    <string name="japan_typical1">Sushi y Sashimi</string>
+    <string name="japan_typical2">Ramen</string>
+    <string name="japan_typical3">Té verde Matcha</string>
+    <string name="japan_typical4">Tempura</string>
+    <string name="japan_languages">Japonés</string>
+
+    <!--Francia -->
+    <string name="France">Francia</string>
+    <string name="france_photo">https://www.state.gov/wp-content/uploads/2023/07/shutterstock_1048826978v2-2313x1406.jpg</string>
+    <string name="france_description">Francia, un país de arte, historia y excelencia culinaria, atrae con su rico patrimonio cultural y paisajes diversos. Desde las románticas calles de París hasta los viñedos bañados por el sol de Burdeos, Francia ofrece un mosaico de experiencias para explorar. Sumérgete en la elegancia de Francia, donde monumentos icónicos se mezclan con encantadores pueblos. La pasión francesa por el arte, la gastronomía y la moda crea una atmósfera encantadora. Ya sea paseando por castillos medievales o saboreando delicias gourmet, Francia te invita a descubrir las capas de su cautivadora narrativa.</string>
+    <string name="france_activities1">Visita el Museo del Louvre en París</string>
+    <string name="france_activities2">Explora la pintoresca región de la Provenza</string>
+    <string name="france_activities3">Pasea por la Costa Azul francesa</string>
+    <string name="france_activities4">Descubre el histórico Mont Saint-Michel</string>
+    <string name="france_activities5">Disfruta de una cata de vinos en Borgoña</string>
+    <string name="france_activities6">Experimenta el encanto de los pueblos de Alsacia</string>
+    <string name="france_places1">Museo del Louvre, París</string>
+    <string name="france_places2">Región de la Provenza</string>
+    <string name="france_places3">Costa Azul francesa</string>
+    <string name="france_places4">Mont Saint-Michel</string>
+    <string name="france_places5">Viñedos de Borgoña</string>
+    <string name="france_places6">Pueblos de Alsacia</string>
+    <string name="france_typical1">Croissant y Baguette</string>
+    <string name="france_typical2">Coq au Vin</string>
+    <string name="france_typical3">Ratatouille</string>
+    <string name="france_typical4">Crème Brûlée</string>
+    <string name="france_languages">Francés</string>
+
+
+
+
+
+
+
 
 </resources>

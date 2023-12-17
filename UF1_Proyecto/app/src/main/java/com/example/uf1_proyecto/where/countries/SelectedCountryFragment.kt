@@ -86,16 +86,35 @@ class SelectedCountryFragment : Fragment() {
                 mensaxe="$countryName added to My trips"
             }
 
-            val newTrip = Trip(
-                id= mainactivity.tripList.size+1,
-                name = countryName,
-                photo =pais.photo,
-                activities = listOf(pais.activities[0], pais.activities[1], pais.activities[2], pais.activities[3],pais.activities[4],pais.activities[5])
+            val sharedPreferences=MainActivity.sharedPreferences!!
+            val editor = sharedPreferences.edit()
 
-            )
-            mainactivity.addViaxe(newTrip)
+            val numTrips = sharedPreferences.getInt("numTrips", 0)
+            val numTrip =numTrips+1
 
-            // Insertar el nuevo Trip utilizando el ViewModel
+            editor.putInt("numTrips", numTrip)
+            editor.putString("name$numTrip", countryName)
+            editor.putString("photo$numTrip", pais.photo)
+            val numActivities = 6
+            for (activityIndex in 1..numActivities) {
+                val activity = "$activityIndex"+"activities"
+                val selectedActivity="selected$activityIndex"+"Activity"
+                editor.putString("$activity$numTrip", pais.activities[activityIndex-1])
+                editor.putInt("$selectedActivity$numTrip", -1)
+            }
+            //valores que ainda non se saben
+            editor.putInt("dayStart$numTrip", -1 )
+            editor.putInt("monthStart$numTrip", -1)
+            editor.putInt("yearStart$numTrip", -1)
+            editor.putInt("dayEnd$numTrip", -1)
+            editor.putInt("monthEnd$numTrip", -1)
+            editor.putInt("yearEnd$numTrip", -1)
+            editor.putInt("transport$numTrip",-1)
+            editor.putString("stay$numTrip", "")
+            editor.putString("notes$numTrip", "")
+
+            editor.apply()
+
 
             Toast.makeText(binding.addButton.context, mensaxe, Toast.LENGTH_SHORT).show()
 
