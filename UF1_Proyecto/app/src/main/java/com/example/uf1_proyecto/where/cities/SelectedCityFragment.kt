@@ -1,16 +1,19 @@
 package com.example.uf1_proyecto.where.cities
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.preference.PreferenceManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.uf1_proyecto.MainActivity
-import com.example.uf1_proyecto.trip.Trip
 import com.example.uf1_proyecto.databinding.FragmentSelectedCityBinding
+import com.example.uf1_proyecto.trip.Trip
 
 
 class SelectedCityFragment : Fragment() {
@@ -86,18 +89,50 @@ class SelectedCityFragment : Fragment() {
             } else{
                mensaxe="$cityName added to My trips"
             }
+//
+//
+//            //engadimos a viaxe no noso Array
+//            var numTrip = mainactivity.tripList.size + 1
+//            val newTrip = Trip(
+//                id= numTrip,
+//                name = cityName,
+//                photo =cidade.photo,
+//                activities = listOf(cidade.activities[0], cidade.activities[1], cidade.activities[2], cidade.activities[3],cidade.activities[4],cidade.activities[5])
+//
+//            )
+//            mainactivity.addViaxe(newTrip)
 
+            //engadimos a viaxe en Shared Preferences
 
-            val newTrip = Trip(
-                id= mainactivity.tripList.size+1,
-                name = cityName,
-                photo =cidade.photo,
-                activities = listOf(cidade.activities[0], cidade.activities[1], cidade.activities[2], cidade.activities[3],cidade.activities[4],cidade.activities[5])
+            //val sharedPreferences = mainactivity.getPreferences(Context.MODE_PRIVATE)
+            val sharedPreferences=MainActivity.sharedPreferences!!
+            val editor = sharedPreferences.edit()
 
-            )
-            mainactivity.addViaxe(newTrip)
-            // Insertar el nuevo Trip utilizando el ViewModel
+            val numTrips = sharedPreferences.getInt("numTrips", 0)
+            val numTrip =numTrips+1
 
+            editor.putInt("numTrips", numTrip)
+            editor.putString("name$numTrip", cityName)
+            editor.putString("photo$numTrip", cidade.photo)
+            val numActivities = 6
+            for (activityIndex in 1..numActivities) {
+                val activity = "$activityIndex"+"activities"
+                val selectedActivity="selected$activityIndex"+"Activity"
+                editor.putString("$activity$numTrip", cidade.activities[activityIndex-1])
+                editor.putInt("$selectedActivity$numTrip", -1)
+            }
+            //valores que ainda non se saben
+            editor.putInt("dayStart$numTrip", -1 )
+            editor.putInt("monthStart$numTrip", -1)
+            editor.putInt("yearStart$numTrip", -1)
+            editor.putInt("dayEnd$numTrip", -1)
+            editor.putInt("monthEnd$numTrip", -1)
+            editor.putInt("yearEnd$numTrip", -1)
+            editor.putInt("transport$numTrip",-1)
+            editor.putString("stay$numTrip", "")
+            editor.putString("notes$numTrip", "")
+
+            editor.apply()
 
             Toast.makeText(binding.addButton.context, mensaxe, Toast.LENGTH_SHORT).show()
 

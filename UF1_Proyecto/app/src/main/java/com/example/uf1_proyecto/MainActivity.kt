@@ -1,5 +1,7 @@
 package com.example.uf1_proyecto
 
+import android.content.Context
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -26,6 +28,10 @@ class MainActivity : AppCompatActivity() {
     public lateinit var boatCompanies: List<Company>
     public lateinit var stayCompanies: List<Company>
     public lateinit var tripList: MutableList<Trip>
+    companion object{
+        var sharedPreferences: SharedPreferences? = null
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,6 +72,12 @@ class MainActivity : AppCompatActivity() {
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
         binding.bottomNavigation.setupWithNavController(navController)
         binding.navView.setupWithNavController(navController)
+
+        if(sharedPreferences==null){
+            sharedPreferences = this.getPreferences(Context.MODE_PRIVATE)
+        }
+
+
 
 
     }
@@ -249,20 +261,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     fun pasarViaxes(): List<Trip>{
-//        val tripList = listOf(
-//            Trip(
-//                id = 1,
-//                name = "Paris",
-//                photo = "https://png.pngtree.com/background/20230612/original/pngtree-wolf-animals-images-wallpaper-for-pc-384x480-picture-image_3180467.jpg",
-//                activities = listOf("Visit Eiffel Tower", "Louvre Museum", "Cruise on Seine River", "4", "5", "6")
-//            ),
-//            Trip(
-//                id = 2,
-//                name = "Beach Vacation",
-//                photo = "https://ethic.es/wp-content/uploads/2023/03/imagen.jpg",
-//                activities = listOf("algo"," algo2", "algo3", "algo4", "algo5", "algo6")
-//            )
-//        )
         return this.tripList
 
     }
