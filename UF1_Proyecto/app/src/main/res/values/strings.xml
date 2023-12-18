@@ -23,6 +23,10 @@
     <string name="boat">By boat</string>
     <string name="stay">Stay</string>
 
+    <string name="bestCities">The best cities to visit during this time are:</string>
+    <string name="infoText">App made for PMDM subject by Diana Ramos Torrado</string>
+
+
 
     <!--SelectedCityFragment-->
     <string name="activities">Activities that can be done there:</string>

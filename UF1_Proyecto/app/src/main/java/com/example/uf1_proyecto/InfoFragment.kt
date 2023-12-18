@@ -1,5 +1,7 @@
     package com.example.uf1_proyecto
 
+    import android.content.Intent
+    import android.net.Uri
     import android.os.Bundle
     import androidx.fragment.app.Fragment
     import android.view.LayoutInflater
@@ -23,6 +25,13 @@
 
             Glide.with(binding.profile.context).load("https://avatars.githubusercontent.com/u/114477134?v=4").into(binding.profile)
 
+            binding.profile.setOnClickListener {
+                // Crear un Intent para abrir el navegador web con la URL
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/a22dianart"))
+
+                // Iniciar la actividad del navegador web
+                startActivity(intent)
+            }
 
             return view
         }

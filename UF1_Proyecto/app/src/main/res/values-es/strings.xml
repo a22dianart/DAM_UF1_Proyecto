@@ -23,6 +23,10 @@
     <string name="boat">En barco</string>
     <string name="stay">Estancia</string>
 
+    <string name="bestCities">Las mejores ciudades para visitar en esta época son:</string>
+    <string name="infoText">Aplicación hecha para la asignatura de PMDM por Diana Ramos Torrado</string>
+
+
 
     <!--SelectedCityFragment-->
     <string name ="activities">Actividades que se pueden hacer:</string>

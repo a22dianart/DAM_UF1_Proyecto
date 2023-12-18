@@ -45,8 +45,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/menu_main" />
+        app:menu="@menu/menu_main"
+        android:background="@color/salmon" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
-<!--    style="@style/Widget.MaterialComponents.Toolbar"-->

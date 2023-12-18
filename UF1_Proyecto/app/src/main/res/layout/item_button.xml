@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:visibility="invisible"/>
+        android:backgroundTint="@color/darkBlueTransparent"/>
     <ImageView
         android:id="@+id/butttonImageView"
         android:layout_width="match_parent"

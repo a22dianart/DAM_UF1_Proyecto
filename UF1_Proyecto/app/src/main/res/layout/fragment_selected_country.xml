@@ -26,6 +26,7 @@ Santiago de Compostela como exemplo
             app:title="Santiago de Compostela"
             app:expandedTitleTextColor="@color/white"
             app:collapsedTitleTextColor="@color/white"
+            app:contentScrim="@color/darkBlueTransparent"
             >
             <ImageView
                 android:id="@+id/placeImage"

@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/infoFragment"
-        android:icon="@android:drawable/ic_menu_info_details"
+        android:icon="@android:drawable/ic_dialog_info"
         app:showAsAction="always"
         android:title="@string/info" />
 
