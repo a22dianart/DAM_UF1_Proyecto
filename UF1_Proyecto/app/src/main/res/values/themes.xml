@@ -2,10 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.UF1_Proyecto" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/mainOrange</item>
+        <item name="colorPrimary">@color/black</item>
         <item name="colorTertiary">@color/green</item>
         <item name="colorPrimaryVariant">@color/lightBlue</item>
-        <item name="colorAccent">@color/green</item>
+        <item name="colorAccent">@color/black</item>
     </style>
     <style name="GreenFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
         <item name="backgroundTint">@color/green</item>

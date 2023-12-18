@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".calendar.CalendarFragment"
-    android:background="@color/darkBlue"
+    android:background="@color/darkBlueTransparent"
     android:orientation="vertical">
 
 
@@ -41,8 +41,7 @@
         android:textSize="15dp"
         android:paddingStart="10dp"
         android:paddingTop="10dp"
-        android:textColor="@color/white"
-        android:background="@color/darkBlue" />
+        android:textColor="@color/white" />
 
 
     <androidx.recyclerview.widget.RecyclerView
